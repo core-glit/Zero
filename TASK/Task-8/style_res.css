@@ -1,0 +1,217 @@
+*{
+    padding:0%;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: orangered;
+    margin-top: 130px;
+}
+
+section{
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items: start;
+    gap:18px;
+}
+
+
+section .profile{
+    width:20%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    border-radius:12px;
+    justify-self: center;
+    background-color: white;
+}
+
+.profile .img_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    gap: 10px;
+    border-bottom: 1px solid;
+}
+
+.img_container img{
+    height: 180px;
+    width: 180px;
+    border: 15px solid rgb(255, 230, 184);
+    border-radius: 50%;
+}
+
+.information{
+    display: flex;
+    gap:10px;
+    width: 100%;
+    padding: 15px 15px 25px;
+    flex-direction: column;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.information div{
+    display: flex;
+    justify-content: start;
+}
+
+
+.content{
+    width:45%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 13px;
+
+
+}
+
+.general_table{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding: 30px;
+    border-radius: 12px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}   
+
+table , td,th{
+    border:0.5px solid gray;
+    border-collapse:collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 7.5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+table{
+    width: 100%;
+    border-radius:10px;
+}
+
+th{
+    width: 30%;
+    text-align: left;
+}
+
+.middle_width{
+    width: 5%;
+}
+
+.other_info{
+    padding: 20px;
+    padding-top: 3*0px;
+    background-color: white;
+    line-height: 2;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.other_info p{
+    width: 93%;
+}
+
+@media only screen and (min-width:300px) and (max-width:680px) {
+
+    body{
+        margin:10px;
+    }
+
+    section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section .profile{
+        width: 70%;
+    }
+
+
+
+    section .content{
+        width: 70%;
+        text-align: justify;
+    }
+    
+    .content .general_table{
+        padding:20px ;
+    }
+
+    .content h1{
+        font-size: 25px;
+    }
+
+    .other_info{
+        padding-top: 15px;
+        line-height: 1;
+    }
+
+    .other_info p{
+        line-height: 2;
+    }
+
+    th{
+        width: 20%;
+    }
+
+
+}
+
+
+@media only screen and (min-width:1000px) and (max-width:1300px) {
+
+    body{
+        margin:80px;
+    }
+
+    section .profile{
+        width: 30%;
+    }
+
+    section .content{
+        width: 70%;
+        text-align: justify;
+    }
+
+}
+
+@media only screen and (min-width:680px) and (max-width:1000px) {
+
+    body{
+        margin:25px;
+    }
+
+    section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section .profile{
+        width: 70%;
+        flex-direction: row;
+
+    }
+
+    .profile .img_container{
+        border: none;
+    }
+
+    .profile .information{
+        border-left: 1px solid;
+        justify-content: center;
+    }
+
+    section .content{
+        width: 70%;
+        text-align: justify;
+    }
+}

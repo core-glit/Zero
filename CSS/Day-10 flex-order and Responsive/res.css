@@ -1,0 +1,54 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+section {
+
+    width: 100%;
+    display: flex;
+    gap: 10px;
+
+    padding: 10px;
+}
+
+section div {
+    height: 33%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section div:first-child {
+    background-color: aqua;
+    order: 3;
+}
+
+section div:nth-child(2) {
+
+    background-color: yellow;
+    order:2;
+
+}
+
+section div:nth-child(3) {
+
+    background-color: rgb(64, 0, 255);
+    order: 1;
+
+}
+
+section div:nth-child(4) {
+
+    background-color: rgb(55, 255, 0);
+}
+
+section div:nth-child(5) {
+    order: -4;
+    background-color: rgb(255, 0, 200);
+
+}

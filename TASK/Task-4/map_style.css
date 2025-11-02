@@ -1,0 +1,241 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(254, 250, 250);
+}
+
+section{
+    width:100%;
+    background-color: rgb(245, 234, 234);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px 25px 70px 25px;
+}
+
+.top_container{
+
+    display: flex;
+    background-color: rgb(245, 234, 234);
+    width: 100%;
+    height: 30%;
+    gap:20px;
+} 
+
+.address , .call , .email{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.address{
+    width: 50%;
+    padding: 13px;
+    border-radius: 3px;
+    text-align: center;
+    height: 150px;
+
+}
+
+.call , .email{
+    width: 25%;
+    border-radius: 3px;
+    padding: 13px;
+    text-align: center;
+    height: 150px;
+}
+
+.icon{
+    color: rgb(92, 92, 187);
+    font-size: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    border-radius: 50%;
+    border:0.5px dotted rgb(84, 84, 205);
+}
+
+.location{
+    display: flex;   
+}
+
+
+
+.map_iframe{
+    width: 50%;
+    margin-right: 24px;
+    height: 460px;
+}
+
+.form{
+    border-radius: 3px;
+    background-color: white;
+    width: 50%;
+    height: 460px;
+    padding: 25px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.input{
+    display: flex;
+    width:100%;
+    gap: 13px;
+}
+
+.input input{
+    padding: 13px;
+    width: 50%;
+}
+
+input{
+    width: 100%;
+    padding: 13px;
+}
+
+textarea{
+    padding: 15px;
+    color: gray;
+}
+
+form .btn_send{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.btn_send button {
+    border-radius:35px;
+    padding:12px;
+    border:none;
+    width:170px;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:rgb(0, 140, 255);
+    color:white;
+    font-size: 16px;
+}   
+
+footer{
+    width: 100%;
+    background-color: aliceblue;
+    height: 400px;
+    
+}
+
+footer .details{
+    height: 85%;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 35px 25px 20px;
+}
+
+footer .bottom_content{
+    width:100%;
+    height: 15%;
+    border-top:1px solid lightgray;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 10px;
+}
+
+.details .Services{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Services p{
+    width: 250px;
+    line-height: 1.7;
+}
+
+.details h2{
+    margin-bottom: 5px;
+}
+ 
+.details h1{
+    margin-bottom: 37px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+figure{
+    display: flex;
+    gap:10px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+a{
+    height: 50px;
+    width: 50px;
+    padding: 13px;
+    border-radius: 50%;
+    color: gray;
+    border: 0.5px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.News{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 30%;
+    line-height: 1.6;
+}
+
+.input_btn{
+    display: flex;
+}
+
+.input_btn input{
+    width: 90%;
+    border-radius: 35px;
+    padding: 10px;
+    border:1px solid rgb(0, 140, 255);
+}
+
+.input_btn button{
+    padding: 10px;
+    width:25%;
+    border: 0px;
+    border-radius: 35px;
+    margin-left: -85px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:rgb(0, 140, 255);
+    color:white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.size{
+    width: 430px;
+}

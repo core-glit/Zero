@@ -1,0 +1,98 @@
+/*for provides a basic kickstart we use universak selector*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*Style for an overall div*/
+.overall_container{
+    width: 100%;
+    height: 735px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #73ffa9;
+}
+
+.container{
+    height:400px;
+    width: 700px;
+    background-color: aliceblue;
+    border:1px solid;
+}
+
+.container nav{
+    height: 18%;
+    width: 100%;
+    padding: 30px;
+    font-size:18px;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+nav p>i{
+    font-size:14px;
+}
+
+nav i{
+    font-size: 20px;
+}
+
+.content_container{
+    height: 82%;
+    width:100%;
+    display: flex;
+
+}
+
+.container .image_container{
+    width:45%;
+    border-right: 1px solid lightgrey;
+    display: flex;
+    justify-content: center;
+    padding:0px 30px;
+    align-items: center;
+}
+
+.image_container img{
+    height:270px;
+    width:100%;
+}
+
+.content_container article{
+    padding: 35px;
+}
+
+article p:nth-child(2){
+    font-size:14px;
+    color:grey;
+}
+
+.content_container article p:nth-child(3){
+    font-size: 32px;
+    margin:15px 0px 20px 0px;
+}
+
+article p:nth-child(4){
+    width: 270px;
+    text-align: justify;
+    color: grey;
+}
+
+article .button_container{
+    margin-top: 20px;
+    display: flex;
+    gap:10px;
+}
+
+.button_container button{
+    width: 50%;
+    padding: 10px;
+    font-weight: bold;
+    border:0.5px solid lightgray;
+    background-color: transparent;
+}

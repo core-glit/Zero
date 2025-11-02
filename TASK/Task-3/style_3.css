@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+/*OVERALL DIV STYLE*/
+.overall{
+    height: 735px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+
+.overall .left_container , .overall .right_container{
+    height: 100%;
+    width: 50%;
+    padding: 30px;
+    align-items: center;
+    align-content: center;
+
+}
+
+.icon_container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 110px;
+    align-items: center;
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 70px;
+}
+.div_1{
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+}
+
+
+i{
+    font-size: 50px;
+}
+
+h3{
+    margin-bottom: 5px;
+    color: orangered;
+}
+
+p{
+    width: 320px;
+    line-height: 1.2;
+}
+
+.right_container section{
+    background-color: rgba(169, 169, 169, 0.675);
+    width:450px;
+    padding:30px;
+    height: 585px;
+    border-radius:20px;
+    display: flex;
+    justify-content: center;
+}
+
+form div{
+    display: flex;
+    gap:10px;
+}
+form input{
+    padding:15px;
+    border: 0px;
+    display: flex;
+    border-radius:35px;
+}
+
+form >input , select{
+    width: 100%;
+    padding:15px;
+    border-radius: 35px;
+    display: flex;
+}
+
+select{
+    margin-top:17.5px;
+    border:0px;
+    font-size: 16px;
+    color: grey;
+    padding-right: 30px;
+}
+
+select option{
+    width:100px;
+}
+
+textarea{
+    width: 100%;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+form button{
+    padding: 15px;
+    border:0px;
+    background-color: orangered;
+    font-weight: bold;
+    width: 120px;
+    margin-top: 13px;
+    color: white;
+    border-radius: 0px 15px 15px 15px;
+}
+

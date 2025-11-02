@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+
+/*--overall div--*/
+.main_container {
+    height: 658px;
+    width: 100%;
+    background-color: white;
+    
+}
+
+/*--seconddiv--*/
+.header_section {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+
+.header_section>p {
+    color: gray;
+    width: 620px;
+}
+
+
+.content_div {
+    height: 80%;
+    width: 100%;
+    border: 0.5px solid rgb(204, 199, 199);
+}
+
+
+.article_card {
+    width: 33.3%;
+    height: 50%;
+    float: left;
+    padding: 60px 30px;
+}
+
+
+.article_card p {
+    text-align: left;
+    color: gray;
+}
+
+
+.article_card span {
+    color: skyblue;
+}
+
+
+.image_container {
+    width: 33.4%;
+    height: 50%;
+    float: left;
+}
+
+
+.journal_image {
+    width: 100%;
+    height: 100%;
+}
+
+
+.article_card_large {
+    width: 33.2%;
+    height: 50%;
+    float: left;
+    padding: 60px 30px;
+}
+
+.article_card_large p {
+    text-align: left;
+    color: gray;
+}
+
+
+.article_card_large span {
+    color: skyblue;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_1</title>
+
+    <!---INTEGRATE THE EXTERNAL CSS-->
+    <link rel="stylesheet" href="./map_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!----OVERALL DIV NAMED AS SECTION-->
+    <section>
+
+    <!----TOP CONTAINER-->
+        <div class="top_container">
+
+            <div class="address">
+                <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+                <h3>Address</h3>
+                <p>52A Sevalai Road , Tirukoilur , Tamilnadu</p>
+            </div>
+
+            <div class="call">
+                <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+                <h3>Call Us</h3>
+                <p>+91 78xxx27xx1</p>
+            </div>
+
+            <div class="email">
+                <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+                <h3>Email Us</h3>
+                <p>info.iotinnovators@gmail.com</p>
+            </div>
+        </div>
+
+        <!--INTEGRATE LOCATION WITH EMBEDDED CODE IN IFRAME-->
+        <div class="location">
+
+            <div class="map_iframe">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.8766170902445!2d80.2189616748197!3d12.975913414784232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d70050d495f%3A0xe1b0d7791146206d!2sCode99%20IT%20Academy!5e1!3m2!1sen!2sin!4v1761399645365!5m2!1sen!2sin"
+                    width="100%" height="460" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="form">
+
+                <form>
+                    <div class="input">
+                        <input type="text" name="name" placeholder="Your Name" />
+                        <input type="email" name="email" placeholder="Your Email">
+                    </div>
+
+                    <input type="text" placeholder="Subject" name="Sub">
+
+                    <textarea cols="100" rows="10">Message</textarea>
+                    <div class="btn_send">
+                        <button>Send Message</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!--FOOTER CONTAINER-->
+    <footer>
+        <div class="details">
+
+            <div class="Services">
+                <h1>Quick Start</h1>
+                <p>52A Sevalai Road , Tirukoilur , Tamilnadu</p>
+                <p><span class="bold">Phone:</span> +91 78100827000</p>
+                <p><span class="bold">Email:</span> info.iotinnovators@gmail</p>
+
+                <figure class="icon_bottom">
+                    <a><i class="fa-brands fa-x-twitter"></i></a>
+                    <a><i class="fa-brands fa-facebook"></i></a>
+                    <a><i class="fa-brands fa-instagram"></i></a>
+                    <a><i class="fa-brands fa-linkedin"></i></a>
+                </figure>
+
+            </div>
+
+            <div class="Services">
+                <h2>Useful Links</h2>
+                <p>Home</p>
+                <p>About Us</p>
+                <p>Services</p>
+                <p>Terms of Service</p>
+                <p>Privacy policy</p>
+            </div>
+            
+            <div class="Services">
+                <h2>Our Services</h2>
+                <p>Web Design</p>
+                <p>Web Development</p>
+                <p>Product Management</p>
+                <p>Marketing</p>
+                <p>Graphic Design</p>
+            </div>
+            
+            <div class="News">
+                <h2>Our Newsletter</h2>
+                <p class="size">Subscribe to our newsletter and receive the latest news about our products and services</p>
+
+                <div class="input_btn">
+                    <input type="text" name="sub" />
+                    <button>Subscribe</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bottom_content">
+            <p>&copy; Copy QuickStart All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>

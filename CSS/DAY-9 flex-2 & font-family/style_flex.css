@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Bitcount+Grid+Single:wght@100..900&family=Noto+Sans+Tamil:wght@100..900&family=Share+Tech&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 80px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section {
+    background-color: aquamarine;
+    height: 735px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+}
+
+section div:first-child {
+    background-color: yellow;
+    align-self: flex-start;
+
+}
+
+section div:nth-child(2) {
+    background-color: rgb(166, 0, 255);
+    justify-self: center;
+    align-self: center;
+
+}
+
+section div:last-child {
+    background-color: rgb(255, 68, 0);
+    justify-self: end;
+    align-self: flex-end;
+}

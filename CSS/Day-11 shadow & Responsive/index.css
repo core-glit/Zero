@@ -1,0 +1,93 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+img{
+    border-radius:50%;
+    border:15px solid black;
+    width:100%;
+    height:100%
+}
+.box1{
+    width:20%;
+    min-height:50%;
+    background-color: white;
+    border-radius:10px
+
+}
+body{
+    background-color: blueviolet;
+}
+.name{
+    border-top:1px solid black;
+    padding:10px
+}
+.b1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:20px
+}
+.name p{
+    padding:3px
+}
+.box2{
+    width:50%;
+    min-height:30%;
+    background-color: white;
+    padding:10px;
+    border-radius:10px
+}
+table,tr,th,td{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+th{
+    width:180px;
+    height:38px;
+    text-align:left;
+    padding:5px
+}
+.t{
+    width:30px;
+}
+.tt{
+    width:350px
+}
+td{
+    padding:10px
+}
+.box2 h1{
+    padding:5px
+}
+.box3{
+    background-color: white;
+    width:50%;
+    min-height:30%;
+    padding:10px;
+    border-radius:10px
+}
+.box3 p{
+    line-height: 25px;
+    margin-top:5px
+}
+.combine{
+    display: flex;
+    flex-direction:column;
+    gap:20px
+}
+.overall{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    height:720px;
+    width:100%
+}
+ @media only screen and (min-width:300px) and (max-width:600px) {
+    .b1{
+        width:50%;
+    }
+}
