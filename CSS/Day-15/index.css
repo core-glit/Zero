@@ -1,0 +1,33 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+h1{
+
+    background-color: rgb(200,100,250 );
+}
+
+
+p:first-child span{
+    background-color: #8957ff;
+    opacity: 0;
+    /* display: inline;
+    height: 100px;
+    width: 200px; */
+}
+
+p:nth-child(3) span{
+    display: none;
+    background-color: yellow;
+    /* display: inline-block;
+    height: 100px;
+    width: 200px; */
+}
+
+p:nth-child(4) span{
+    visibility: hidden;
+    background-color: rgb(255, 12, 121);
+    /* display: block; */
+}

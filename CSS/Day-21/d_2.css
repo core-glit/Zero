@@ -1,0 +1,134 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+
+}
+body{
+    overflow-x: hidden;
+}
+.overall{
+    min-width:100px;
+    min-height:100px;
+    
+}
+.nav{
+    background-color: royalblue;
+    height:80px;
+    width:100%;
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    padding:15px 25px;
+}
+.topics{
+    display: flex;
+    gap:30px;
+    justify-content: center;
+    align-items: center;
+
+}
+.sing{
+    animation-name:top;
+    animation-duration: 0.8s;
+    animation-iteration-count:6;
+    animation-duration: 1.8s;
+}
+@keyframes top{
+    from{
+        position: relative;
+        bottom:50px;
+    }
+    to{
+        bottom:-50px;
+    }
+}
+
+.topics button{
+    background-color: transparent;
+    color:white;
+    padding:5px 15px;
+    height:30px;
+    border:none;
+    animation-name: bottom;
+    animation-duration: 0.8s;
+    animation-iteration-count:6;
+    animation-duration: 1.8s;
+
+}
+@keyframes bottom{
+    from{
+        position: relative;
+        bottom:-50px;
+    }
+    to{
+        bottom:50px;
+    }
+}
+.topics button:hover{
+    background-color: orange;
+    border-radius:5px;
+}
+.content{
+    padding:30px 20px;
+    display: flex;
+    flex-direction: column ;
+    gap:20px;
+}
+.one{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    animation-name: Article1;
+    animation-duration: 0.8s;
+    animation-iteration-count:6;
+    animation-duration: 1.8s;
+}
+@keyframes Article1{
+    from{
+        position: relative;
+        left:-1300px;
+    }
+    to{
+        left:1200px;
+    }
+}
+.one p{
+    line-height:35px;
+}
+.two{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    animation-name: Article2;
+    animation-duration: 0.8s;
+    animation-iteration-count:6;
+    animation-duration: 1.8s;
+}
+.two p{
+    line-height:35px;
+}
+@keyframes Article2{
+    from{
+        position: relative;
+        left:1200px;
+    }
+    to{
+        left:-1300px;
+    }
+}
+@media only screen and (min-width:300px) and (max-width:600px) {
+    body{
+        width:100%;
+    }
+    .overall{
+        width:100%;
+    }
+    .nav{
+        width:100%;
+        
+    }
+    .content{
+        width:100%;
+    }
+}

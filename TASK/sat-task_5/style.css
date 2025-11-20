@@ -1,0 +1,15 @@
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+
+.container{
+  display: grid;
+  border: 1px solid;
+  background-color: antiquewhite;
+}
+
+.container .container_top{
+  border: 1px solid;
+}

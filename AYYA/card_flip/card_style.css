@@ -1,0 +1,57 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.overall{
+    height: 450px;
+    width: 310px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform:perspective(400px);
+    transition: all 1s;
+    border: 1px solid;
+}
+
+
+
+.front , .back{
+    transform-style: preserve-3d;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.front{
+    background-color: coral;
+    backface-visibility: hidden;
+}
+
+.back{
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-color: darkgrey;
+}
+
+.overall:hover{
+    transform: rotateY(180deg);
+}
+
+h3{
+    transform: translateZ(50px);
+}
+

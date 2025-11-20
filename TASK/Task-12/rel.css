@@ -1,0 +1,103 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{    background-color: rgb(49, 49, 83);
+}
+
+
+main{
+    display: flex;
+    padding: 65px;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    color: white;
+    background-color: rgb(49, 49, 83);
+    align-items: center;
+}
+main h1{
+    color: rgb(200, 73, 255);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    text-align :center
+
+}
+
+main p{
+min-width: 300px;
+text-align:center;
+    line-height: 1.4;
+
+}
+
+.icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.icon i{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(49, 49, 83) ;
+    align-items: center;
+    font-size: 20px;
+    width: 40px;
+    border:2px solid goldenrod;
+    border-radius:50%;
+
+}
+
+article{
+    background-color: rgb(6, 5, 17);
+    padding: 60px;
+    min-height: 436px;
+    display: flex;
+    flex-wrap:wrap;
+    color:white;
+    justify-content: space-evenly;
+}
+
+article .right-container{
+    flex-wrap: wrap;
+    min-width: 700px;
+    border: 1px solid;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+
+}
+
+article .left-container{
+    min-width: 700px;
+    border: 1px solid;
+}
+
+img{
+    height:90px;
+    width:90px;
+}
+
+.right-container p{
+    width:590px;
+}
+
+button{
+    padding: 10px;
+    width:150px;
+    background-color: transparent;
+    color: goldenrod;
+    border:1px solid goldenrod;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+button i{
+    font-size: 20px;
+}

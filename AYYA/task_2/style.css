@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Momo+Trust+Sans:wght@200..800&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    min-height:100vh;
+    background-color:rgb(9, 76, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.overall{
+    width: 650px;
+    min-height: 545px;
+    background-color: #fff;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.imagecontent{
+    width: 290px;
+    height: 455px;
+    background-color: rgb(0, 255, 30);
+    border-radius: 15px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 50px;
+    right: 400px;
+    box-shadow: 1px 2px 10px black;
+}
+nav{
+    display: flex;
+    height: 50px;
+    border-radius: 15px;
+    background-color: rgb(0, 255, 30);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+nav>i{
+    font-size: 20px;
+    color: white;
+}
+.apple-image{
+    height: 300px;
+    width: 300px;
+    position:absolute;
+    right: 40px;
+    top: 40px;
+}
+.boxes{
+    height: 90px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border-radius: 0px 0px 15px 15px ;
+    justify-content: center;
+    gap: 7px;
+    align-items: center;
+}
+.boxes>img{
+    width: 60px;
+    height: 60px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+.aside{
+    width: 380px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position: absolute;
+    padding: 30px 30px 50px 30px;
+    gap: 10px;
+}
+.aside>div>h2{
+    font-size: 25px;
+    color: black;
+    font-family: "Inter", sans-serif;
+}
+.one>p{
+    position: relative;
+}
+.one>p>span{
+    position: absolute;
+    top: 5px;
+    padding-left: 3px;
+}
+.para{
+    font-size: 25px;
+    height: 90px;
+    color: rgb(255, 65, 65);
+    padding-top: 15px;
+}
+.para>span{
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.two>div{
+    display: flex;
+    gap: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+.two>div>img:nth-child(2), .two>div>img:nth-child(3), .two>div>img:nth-child(4){
+    width: 25px;
+    height: 25px;
+    position: absolute;
+}
+.two>div>img:nth-child(2){
+    left: 37px;
+    top:2px;
+}
+.two>div>img:nth-child(3){
+    left: 70px;
+    top: 3px;
+}
+.two>div>img:nth-child(4){
+    left: 105px;
+    top: 2px;
+    height: 26px;
+}
+
+.borderbox{
+    border: 2px solid gray;
+    border-radius: 3px;
+    height: 30px;
+    width: 30px;
+    padding: 2px;
+}
+
+.three{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 15px;
+}
+.three>ul{
+    position: relative;
+    line-height: 22px;
+}
+.three>ul>li{
+    padding-left: px;
+    position: relative;
+    left: 15px;
+}
+.aside>button{
+    width: 200px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(255, 41, 41);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 15px;
+}
+.same{
+    color: gray;
+}
+@media screen and (min-width:426px) and (max-width:768px){
+    .container{
+        padding: 20px;
+        padding-top: 220px;
+    }
+    .overall{
+        width: 400px;
+        height: 800px;
+
+    }
+    .imagecontent{
+        left: 57px;
+        z-index: 2;
+        top: -180px;
+    }
+    .aside{
+        top: 290px;
+        width: 330px;
+        height: 500px;
+        left: 35px;
+    }
+    .aside>button{
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:426px){
+    .container{
+        padding: 10px;
+        padding-top: 190px;
+    }
+    .overall{
+        width: 310px;
+        height: 750px;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+    }
+    .imagecontent{
+    width: 250px;
+    height: 370px;
+    left: 30px;
+    top: -160px;
+    }
+    nav>i{
+        font-size: 16px;
+    }
+    .apple-image{
+        height: 250px;
+        width: 250px;
+        position:absolute;
+        right: 30px;
+        top: 40px;
+    }
+    .boxes{
+        height: 60px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        gap: 7px;
+        align-items: center;
+    }
+    .boxes>img{
+        width: 50px;
+        height: 50px;
+        border: 2px solid gray;
+        border-radius: 5px;
+    }
+
+    .aside{
+    width: 300px;
+    top: 240px;
+    padding-bottom: 0px;
+    }
+    .aside>button{
+        margin: auto;
+        margin-top: 20px;
+    }
+
+}
+

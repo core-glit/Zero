@@ -1,0 +1,133 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+.home{
+    height: 100vh;
+    background-color: antiquewhite;
+}
+nav{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    border: 1px solid;
+    position: fixed;
+    width: 90%;
+    padding: 10px;
+    align-items:center;
+    top: 20px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    justify-self: center;
+    box-shadow: 2px 2px 5px 3px;
+    transition: all 1s;
+}
+
+input{
+    display:none;
+}
+
+nav label{
+    position:absolute;
+    right:20px;
+}
+
+.right a{
+    position: relative;
+    padding: 5px 8px;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+nav_2{
+    
+    height:50vh;
+    display:flex;
+    background-color:red;
+}
+
+.right a::before{
+    position: absolute;
+    content:"";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background-color: aqua;
+    transition: all 1s;
+    z-index:-1;
+}
+
+.right a::after{
+
+    content:"";
+    width:100%;
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    height: 0%;
+    right: 0;
+    z-index:-1;
+    transition: all 1s;
+}
+
+.right a:hover::before  , a:hover::after {
+    height: 50%;
+}
+
+
+
+
+nav div:last-child{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.home,.about,.contact,.projects{
+    height: 100vh;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about{
+    background-color: gold;
+}
+
+.contact{
+    background-color: crimson;
+}
+
+.projects{
+    background-color: azure;
+}
+
+
+input:checked~.right{
+    left:5%;
+}
+
+@media only screen and (max-width:900px){
+    .right{
+        transition:all 1s;
+        position:fixed;
+        left:-100%;
+        top:75px;
+        width:90%;
+        flex-direction:column;
+        height:70vh;
+        padding:30px;
+        border-radius:30px;
+        gap:30px;
+        background-color:white;   
+    }
+
+
+}

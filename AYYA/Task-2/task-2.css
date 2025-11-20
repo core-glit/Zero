@@ -1,0 +1,143 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    gap:50px;
+    padding:30px;
+    flex-wrap:wrap;
+    background-color: #ffe4e4;
+}
+.box1{
+    width: 300px;
+    height: 420px;
+    box-shadow: 3px 3px 10px black;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.side1{
+    width:180px;
+    height:140px;
+    background-color: blue;
+    transform: scaleX(1);
+    transform: rotate(130deg);
+    position:absolute;
+    top:-55px;
+    left:-55px;
+    z-index: 2;
+}
+.side2{
+    width: 280px;
+    height:150px;
+    background-color: cornflowerblue;
+    position: relative;
+    transform: rotate(16deg);
+    top:-55px;
+    right:-50px
+}
+.b1{
+    color: blue;
+    border:1px solid blue
+}
+.b3{
+    color:blueviolet;
+    border:1px solid blueviolet
+}
+.b4{
+    color:darkgreen;
+    border:1px solid darkgreen
+}
+.txt1{
+    position:absolute;
+    z-index:3;
+    transform: rotate(230deg);
+    right:40px;
+    bottom:80px
+    
+}
+.com{
+    display: flex;
+    color:white
+}
+.txt2{
+    position: absolute;
+    z-index: 4;
+    font-size: 28px;
+    right: 55px;
+    bottom:30px;
+    transform: rotate(-17deg);
+}
+button{
+    width:90%;
+    height:40px;
+    border-radius:20px;
+    /* margin-left:12px; */
+    /* margin-top:18px; */
+    background-color: white;
+}
+.ss2{
+    background-color: brown;
+    color: white;
+}
+.s2{
+    background-color: rgb(223, 89, 89);
+    color:white
+}
+.s3{
+    background-color: blueviolet;
+}
+.ss3{
+    background-color: rgb(166, 104, 224);
+}
+.s4{
+    background-color:darkgreen;
+}
+.ss4{
+    background-color: rgb(32, 175, 32);
+}
+.btn{
+    width:90%;
+    height:40px;
+    border-radius:20px;
+    /* margin-left:12px; */
+    /* margin-top:18px; */
+    border:1px solid brown;
+    text-align: center;
+    padding:10px;
+    position: relative;
+    overflow: hidden;
+    color:brown
+}
+.d1{
+    width:100px;
+    background-color: brown;
+    height:30px;
+    position: absolute;
+    top:-10px;
+    left:-20px;
+    transform: rotate(-30deg);
+}
+.d2{
+    width:100px;
+    background-color: brown;
+    height:35px;
+    position: absolute;
+    right:-20px;
+    bottom:-13px;
+    transform: rotate(-30deg);
+    
+    
+}
+p{
+    text-align: center;
+    margin:10px 0px
+}

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Bebas+Neue&family=Coiny&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+80s+Fade&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+section {
+    background-color:#ffff00e8;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.iam {
+    font-family:"Rubik 80s Fade", system-ui;
+    font-size: 30px;
+    color:#ff0000f0;
+    padding-left:30px;
+    width:180px;
+    text-align:center;
+    word-spacing:5px;
+}
+
+img {
+    height: 460px;
+    width: 460px;
+    border: 20px double #ffffff;
+    border-radius: 50%;
+    background-color:#ff5a5a66;
+}
+
+.movement {
+    height: 120px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    font-size: 45px;
+    align-items: center;
+    overflow: hidden;
+    width: 500px;
+    position: relative;
+}
+    
+.movement article {
+    font-family: "Bebas Neue", sans-serif;
+    animation-duration: 7s;
+    animation-name: developer;
+    animation-iteration-count: infinite;
+    transition: all 1px;
+
+}
+
+/* Animation Keyframes */
+
+@keyframes developer {
+    0% {
+        transform: translateY(0);
+    }
+
+    10% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(-118px);
+    }
+
+    30% {
+        transform: translateY(-118px);
+    }
+
+    40% {
+        transform: translateY(-236px);
+    }
+
+    50% {
+        transform: translateY(-236px);
+    }
+
+    60% {
+        transform: translateY(-118px);
+    }
+
+    70% {
+        transform: translateY(-118px);
+    }
+
+    75% {
+        transform: translateY(-118px);
+    }
+
+    90% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

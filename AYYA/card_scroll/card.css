@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    overflow: hidden;
+}
+
+
+.holder{
+    display: flex;
+    height: 560px;
+    /* width: 540px; */
+    gap: 30px;
+}
+
+.container{
+    height: 100vh;
+    padding:20px;
+    background-image: linear-gradient(to right, #b1ecff, #faf9e0);
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+.card{
+    box-shadow:1px 1px 5px black;
+    border-radius:10px;
+    width: 360px;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    animation-name: card;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-fill-mode:forwards;
+    transition:all 1s;
+}
+.card img{
+    border-radius:10px 10px 0px 0px;
+    width: 100%;
+    height: 50%;
+}
+.title{
+    text-align: center;
+    width: 90%;
+    color: white;
+    background-color: rgb(0 0 0 / 77%);
+    position: relative;
+    padding: 6px;
+    top: -28px;
+    left: 5%;
+    font-family:monospace;
+}
+.card>p{
+    font-weight: bold;
+    position: relative;
+    top: -12px;
+    text-align: center;
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    padding-left: 20px;
+}
+.icon i{
+    font-size: 25px;
+    width: 40px;
+    border: 2px solid white;
+    height: 40px;
+    position: relative;
+    z-index: 99;
+    padding: -7px;
+    border-radius: 50%;
+    color: white;
+    align-self: center;
+    padding-top: 6.5px;
+}
+.icon span{
+    color: white;
+    display: inline-block;
+    padding: 2px 19px;
+    position: relative;
+    left: -7.5px;
+    border-radius: 0 5px 5px 0;
+    top: -3px;
+    letter-spacing: 2px;
+}
+.face_book{
+    background-color:royalblue;
+}
+.Git{
+    background-color: black;
+}
+.Whatsapp{
+    background-color: #20ad20;
+}
+.insta{
+    background-color: #ff0080;
+}
+
+
+@keyframes card{
+ 0%{
+    transform: translateX(0px);
+ }
+
+15%{
+    transform: translateX(0px);
+}
+
+ 30%{
+    transform: translateX(-380px);
+ }
+ 35%{
+    
+    transform: translateX(-380px);
+ }
+ 50%{
+    
+    transform: translateX(-770px);
+ }
+ 55%{
+    
+    transform: translateX(-770px);
+ }
+
+70%{
+    transform: translateX(-1160px);
+}
+
+75%{
+    transform: translateX(-1160px);
+}
+
+90%{
+    transform: translateX(-1550px);
+}
+
+100%{
+    transform: translateX(-1550px);
+}
+}

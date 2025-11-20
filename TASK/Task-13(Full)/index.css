@@ -1,0 +1,166 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.top_container{
+    min-height: 600px;
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top_content{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    align-items: center;
+    text-align: center;
+}
+
+.top_content p{
+    width: 380px;
+}
+
+
+.top_content h1{
+    font-size: 45px;
+    color: rgb(4, 65, 49);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.top_boxes{
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* grid-template-columns: auto auto auto; */
+}
+
+.top_boxes .image{
+    width: 450px;
+    display: grid;
+    padding: 30px 30px 50px;
+    border: 1px solid black;
+    gap: 25px;
+
+}
+
+
+.image h1{
+    font-size: 40px;
+    color:rgb(0, 123, 82);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.image .img_content{
+    align-items: start;
+    text-align:justify;
+    line-height: 1.4;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    border: 1px solid ligh;
+}
+
+.img_container {
+    border: 1px solid;
+    background-size: 100% 100%;
+    min-width: 30.6px;
+    min-height: 150px;
+    background-image: url(https://cdn.pixabay.com/photo/2017/10/04/09/56/laboratory-2815638_1280.jpg);
+}
+
+.bg-img_2{
+    background-image: url(https://cdn.pixabay.com/photo/2024/07/08/16/28/ai-generated-8881545_1280.jpg);
+    background-size: 100% 100%;
+}
+
+.bg-img_3{
+    background-image:url(https://cdn.pixabay.com/photo/2021/01/11/01/59/blood-test-5906819_1280.jpg);
+    background-size: 100% 100%;
+}
+
+
+@media only screen and (min-width:1020px) and (max-width:1390px){
+    
+    .top_boxes .image{
+        width: 600px;
+        grid-template-columns: auto auto;
+}   
+
+.img_container{
+    width:250px;
+}
+.img_content{
+    width:250px;
+}
+
+}
+
+@media only screen and (min-width:700px) and (max-width:1200px){
+    
+    .top_boxes .image{
+        width: 700px;
+        grid-template-columns:auto auto;
+}   
+    .img_container{
+        width:300px;
+    }
+    .img_content{
+        width:300px;
+    }
+    
+}
+
+@media only screen and (min-width:200px) and (max-width:470px){
+    
+    .top_boxes .image{
+        width: 300px;
+        grid-template-columns:auto;
+    }
+
+    .top_content p {
+        width: 300px;
+        padding: 10px;
+    }
+}
+
+
+
+/* middle*/
+
+
+.middle_container{
+    display: flex;
+    justify-content: center;
+}
+
+.middle_top{
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto auto auto;
+}
+
+.middle_top h1 , .middle_top p{
+    width: 300px;
+}
+
+.middle_top div{
+    min-width: 450px;
+    border: 1px solid;
+    justify-content: center;
+}

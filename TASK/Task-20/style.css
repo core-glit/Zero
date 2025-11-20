@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Coiny&display=swap');
+
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+
+}
+
+img{
+    filter: brightness(90%);
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+h1{
+    color: rgb(12, 38, 33);
+    text-shadow: 5px 5px 20px rgba(247, 254, 251, 0.715);
+    position: absolute;
+    font-size: 70px;
+    font-family: "Coiny", system-ui;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+h1::first-letter{
+    font-size: 130px;
+}

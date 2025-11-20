@@ -1,0 +1,66 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+div{
+    margin:auto;
+    width: 300px;
+    height: 300px;
+    animation-name: box;
+    background-color:yellow;
+    animation-duration: 5s;
+    position: relative;
+    animation-direction:alternate;
+    border: 1px solid;
+    animation-fill-mode:both;
+    transition: all 2s;
+    animation-delay:2s;
+    
+    /* animation-iteration-count:infinite; */
+}
+
+@keyframes box{
+    0%{
+        top:0;
+        left: 0px;
+        background-color: #000000;
+        border-radius:15%;
+
+    }
+
+    25%{
+        top:0;
+        left:300px;
+        background-color: blueviolet;
+        border-radius:20%;
+    }
+
+    50%{
+        top:300px;
+        right: 80px;
+        background-color: bisque;
+        border-radius:30%;
+    }
+
+    75%{
+        /* top:200px; */
+        left:300px;
+        border-radius:35%;
+        background-color: blue;
+    }
+
+    100%{
+        top: 0;
+        border-radius:50%;
+        left:0;
+        background-color: #ff0101;
+    }
+
+
+}

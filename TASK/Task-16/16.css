@@ -1,0 +1,86 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+section {
+    min-height: 710px;
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.top_boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.boxes{
+    
+    box-shadow: 0px 5px 10px gray;
+    width: 350px;
+    height: 300px;
+    border-top: 5px solid rgb(0, 208, 255);
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding: 50px 40px 30px;
+}
+
+img{
+    display: flex;
+    flex-direction: column;
+    width:100px;
+    height: 100px;
+    align-self: flex-end;
+}
+
+
+.top_boxes .boxes:nth-child(3){
+    border-top: 5px solid rgb(4, 17, 187);
+}
+
+.center_boxes {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.top_boxes .boxes:nth-child(2){
+    border-top: 5px solid rgb(255, 149, 0);
+}
+
+.center_boxes .boxes:first-child{
+    border-top: 5px solid rgb(11, 94, 6);
+}
+
+
+/* for tablet and below 1200px  */
+
+@media only screen and (min-width:730px) and (max-width:1211px)
+{
+    .center_boxes{
+        justify-content: center;
+        flex-direction: row;
+    }
+}
+
+/* for mobile screen */
+@media only screen and (max-width:320px)
+{
+    .boxes{
+        width: 300px;
+        padding: 50px 20px 30px;
+    }
+}
+
+

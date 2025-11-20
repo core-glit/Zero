@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Stack+Sans+Notch:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Notch:wght@200..700&display=swap');
+*{
+    padding: 0px;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+nav{
+    font-size:30px;
+    text-align:center;
+    font-family:monospace;
+}
+
+
+
+section{
+    padding:20px;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    /* height: 90vh; */
+    flex-wrap:wrap;
+    gap:40px;
+}
+
+.left_container{
+    height: 580px;
+    width: 540px;
+    justify-content: center;
+    display: flex;
+}
+
+img{
+    height:100%;
+    width:100%;
+}
+
+
+
+.content_position{
+    display:flex;
+    /* align-items: start; */
+    position:relative;
+}
+
+
+.right_container{
+    min-width: 200px;
+    display:flex;
+    /* align-items: center; */
+    flex-direction:column;
+    gap: 40px;
+}
+
+.top{
+    height: 370px;
+    width:300px;
+    align-self:start;
+    box-shadow: 1px 1px 5px 1px rebeccapurple;
+    border:20px solid red;
+}
+
+.content{
+    box-shadow: 1px 1px 4px 1px;
+    min-width: 80px;
+    display:flex;
+    font-family: "Stack Sans Notch", sans-serif;
+    flex-direction:column;
+    gap:20px;
+    position:absolute;
+    left: 100px;
+    top: 60px;
+    background-color:white;
+    z-index:1;
+}
+
+.content p{
+    
+    font-family: "Roboto Condensed", sans-serif;
+    font-size:20px;
+    line-height:1.4;
+} 
+
+button{
+    padding: 10px;
+    font-size: 20px;
+    font-weight:bold;
+    align-self:center;
+    position: relative;
+    left: 20px;
+    top:90px;
+    border:none;
+    width: 134px;
+    color:gray;
+    font-family: "Stack Sans Notch", sans-serif;
+    border-bottom:2px solid grey;
+    background-color:transparent;
+}
+
+.bottom{
+    min-height: 53px;
+    min-width: 30px;
+    justify-content: space-between;
+    background: #8f8f8f2b;
+    z-index: 99;
+    box-shadow: 1px 1px 10px 1px;
+    display:flex;
+    flex-wrap:wrap;
+    position: relative;
+}
+
+.box{
+    display:flex;
+    position:relative;
+    min-width: 20px;
+    z-index: 99;
+    padding: 0px 40px;
+}
+
+.box p:first-child{
+    font-size: 140px;
+    z-index: 98;
+    color:#4c004c8a;
+    opacity:0.4;
+    font-family:system-ui;
+}
+
+.box p:nth-child(2){
+    font-size:28px;
+    font-weight:bold;
+    top:95px;
+    z-index: 99;
+    position:absolute;
+    left:20px;
+    color:#900090;
+}
+
+.triangle{
+    width: 40px;
+    border-left: 1px solid #0000002b;
+    position: absolute;
+    top: -20px;
+    left: 95px;
+    border-top: 1px solid #0000002b;
+    z-index:0;
+    background: #eeeeee2b;
+    height: 40px;
+    transition:all 1s;
+    transform: rotate(45deg);
+}
+
+@media only screen and (max-width:660px)
+    {
+
+    .content_position{
+        width:100%;
+    }
+
+    
+    .content h2 , .content p{
+        font-size: 16px;
+    }
+
+    .top{
+    /* align-self: center; */
+    /* justify-self: center; */
+    width: 100%;
+    }
+
+    .content{
+    justify-self: center;
+    text-align: justify;
+    position: absolute;
+    left: 12.5%;
+    top: 65px;
+    height: 192px;
+    overflow: auto;
+    width: 75%;
+    }
+
+    .bottom{
+        width:100%;
+        justify-content: center;
+        /* align-items: center; */
+    }
+
+    button{
+        position: absolute;
+        left: 12%;
+        top: 265px;
+    }
+
+    .triangle{
+        left: 46.2%;
+    }
+}
+
+@media only screen and (min-width:660px) and (max-width:732px){
+    .triangle{
+        left:520px;
+    }
+
+
+}
+
+@media only screen and (min-width:732px) and (max-width:768px){
+    .triangle{
+        left:560px;
+    }
+
+
+}

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(244, 123, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 48px;
+  }
+  
+  /* --- GRID CONTAINER --- */
+  .grid-wrapper {
+    display: grid;
+    align-self: center;
+    min-height: 550px;
+    width: 80%;
+    grid-template-areas:
+      "box1 box2 box3 box4"
+      "box5 box6 box6 box9"
+      "box5 box6 box6 box9"
+      "box5 box7 box8 box9";
+  
+  }
+
+    /* --- ASSIGNING GRID AREAS --- */
+    .box1 { grid-area: box1; }
+    .box2 { grid-area: box2; }
+    .box3 { grid-area: box3; }
+    .box4 { grid-area: box4; }
+    .box5 { grid-area: box5; }
+    .box6 { grid-area: box6; }
+    .box7 { grid-area: box7; }
+    .box8 { grid-area: box8; }
+    .box9 { grid-area: box9; }
+    
+  
+  .center-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .spacing-text{
+    margin-right: 60px;
+  }
+  
+  /* --- BOX STYLE --- */
+  .common-box {
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .common-box h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    
+  }
+  
+  .common-box p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  /* --- COLORS --- */
+  .dark-bg { background-color: #1c1c1c; }
+  .blue-bg { background-color: #33b5ff; }
+  .green-bg { background-color: #22bfa0; }
+  .purple-bg { background-color: #003cf1; }
+  
+  /* --- RESPONSIVE DESIGN --- */
+  @media only screen and (min-width:600px) and (max-width:900px)
+      
+  {
+
+    .grid-wrapper {
+      grid-template-areas:
+        "box1 box2"
+        "box3 box4"
+        "box5 box6"
+        "box7 box8"
+        "box9 box9";
+      
+    }
+  }
+  
+  @media only screen and (min-width:300px) and (max-width:600px) {
+
+    body{
+        margin:10px;
+    }
+    .grid-wrapper {
+      grid-template-areas:
+        "box1"
+        "box2"
+        "box3"
+        "box4"
+        "box5"
+        "box6"
+        "box7"
+        "box8"
+        "box9";
+     
+    }
+  }
+
+  @media only screen and (min-width:1025px) and (max-width:1440px) {
+
+    body{
+    margin-top:100px;
+    }
+}

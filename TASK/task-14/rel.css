@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 241, 148);
+  font-family: Arial, sans-serif;
+}
+
+section {
+  background-color: rgb(255, 241, 148);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 25px;
+}
+
+.top_container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.icon {
+  font-size: 20px;
+  color: black;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px dotted rgb(84, 84, 205);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+h3 {
+  margin-top: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.location {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.map_iframe, .form {
+  min-width: 300px;
+}
+
+.map_iframe {
+  width: 49%;
+}
+
+.form {
+  background-color: white;
+  width: 48%;
+  border-radius: 3px;
+  box-shadow: 2px 2px 8px rgb(0, 0, 0);
+  padding: 25px;
+}
+
+.address, .call, .email {
+  background-color: white;
+  border-radius: 3px;
+  text-align: center;
+  padding: 13px;
+  width: 32%;
+  box-shadow: 2px 2px 8px black;
+  min-width: 250px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.input input {
+  width: 48%;
+  padding: 10px;
+}
+
+.subj, textarea {
+  width: 100%;
+  padding: 10px;
+}
+
+textarea {
+  color: gray;
+}
+
+.btn_send {
+  text-align: center;
+}
+
+.btn_send button {
+  border: none;
+  background-color: rgb(0, 140, 255);
+  color: white;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: aliceblue;
+  padding: 30px 20px;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.Services, .News {
+  width: 45%;
+  min-width: 250px;
+}
+
+.Services p, .News p {
+  line-height: 1.6;
+}
+
+.icon_bottom {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.icon_bottom a {
+  border: 1px solid gray;
+  color: gray;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.input_btn {
+  display: flex;
+  justify-content: center;
+}
+
+.input_btn input {
+  width: 90%;
+  border-radius: 35px;
+  padding: 10px;
+  border: 1px solid rgb(0, 140, 255);
+}
+
+.input_btn button {
+  width: 34%;
+  border: none;
+  border-radius: 35px;
+  margin-left: -85px;
+  background-color: rgb(0, 140, 255);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.bottom_content {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid lightgray;
+  font-weight: bold;
+  margin-top: 13px;
+}
+
+@media only screen and (max-width: 600px) {
+  .top_container, .location {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .address, .call, .email,
+  .map_iframe, .form,
+  .input input {
+    width: 100%;
+  }
+
+  footer .details {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .icon_bottom {
+    justify-content: center;
+  }
+
+  iframe {
+    height: 250px;
+  }
+
+  .btn_send button {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .top_container {
+    justify-content: center;
+  }
+
+  .address, .call, .email {
+    width: 45%;
+  }
+
+  .location {
+    flex-direction: column;
+  }
+
+  .map_iframe, .form {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .top_container {
+    gap: 15px;
+  }
+
+  .map_iframe, .form {
+    width: 48%;
+  }
+}
