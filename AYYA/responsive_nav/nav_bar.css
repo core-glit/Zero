@@ -1,4 +1,5 @@
 *{
+    scroll-behavior: smooth;
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
@@ -37,6 +38,7 @@ nav label{
 }
 
 .right a{
+    text-decoration: none;
     position: relative;
     padding: 5px 8px;
     font-size: 22px;
