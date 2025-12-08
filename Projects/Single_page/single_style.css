@@ -1020,7 +1020,7 @@
     @media (max-width: 991px) {
         .choose_container {
             flex-direction: column;
-            
+
             flex-wrap: nowrap;
         }
 
@@ -1033,7 +1033,7 @@
             flex-wrap: nowrap;
             padding: 0 30px;
             flex: none;
-            transition:all 1s;
+            transition: all 1s;
         }
 
         .choose_item:hover,
@@ -1055,8 +1055,8 @@
         .choose_item:hover .item_content,
         .choose_item.expanded .item_content {
             display: block;
-            
-            transition:all 1s;
+
+            transition: all 1s;
             opacity: 1;
         }
 
@@ -1383,7 +1383,7 @@
         width: 1240px;
         height: 312px;
         max-width: 95%;
-        background-image: url("/Single_page/Samples/bg-white_rocket.png");
+        background-image: url("/Single_page/Samples/bg-rocket.png");
         background-color: #A1DF70;
         background-size: 2085px 384px;
         background-position: -1264px -15px;
