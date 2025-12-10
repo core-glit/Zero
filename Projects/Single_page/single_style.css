@@ -378,79 +378,237 @@
 
     /* Stats Section */
     .stats_section {
-        background-color: #0D1322;
-        border-radius: 75px 75px 0 0;
-        padding: 30px 50px;
-        margin: 40px 0;
-        border: 2px solid #1a2e35;
-        height: 200px;
-        box-shadow: 0px 2px 23.8px 0px #54B43580;
-
+        background-color: #1a2230;
+        border-radius: 60px 60px 0 0;
+        padding: 50px 80px;
         margin: 0% 3% 0% 3%;
+        border: 3px solid #2a3545;
+        box-shadow: 0px 4px 30px 0px rgba(84, 180, 53, 0.4);
+        position: relative;
+        overflow: hidden;
 
+        /* CSS Scroll Animation */
+        animation: statsSlideIn 1s ease-out forwards;
+        animation-timeline: view();
+        animation-range: entry 0% cover 30%;
+    }
+
+
+    @keyframes statsSlideIn {
+        from {
+            opacity: 0;
+            transform: translateY(60px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Subtle gradient overlay */
+    .stats_section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(84, 180, 53, 0.05) 0%, transparent 50%, rgba(84, 180, 53, 0.03) 100%);
+        pointer-events: none;
+        border-radius: 60px 60px 0 0;
     }
 
     .stats_container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        gap: 150px;
-        height: 123px;
+        gap: 40px;
         width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
     }
 
     .stat_item {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        color: white;
-        width: 170px;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        color: white;
+        min-width: 180px;
+        padding: 20px;
+        /* CSS Scroll Animation with staggered delays */
+        animation: statItemFadeIn 0.8s ease-out forwards;
+        animation-timeline: view();
+        animation-range: entry 10% cover 40%;
+        transition: transform 0.3s ease;
+    }
+
+    .stat_item:nth-child(1) {
+        animation-delay: 0s;
+    }
+
+    .stat_item:nth-child(2) {
+        animation-delay: 0.15s;
+    }
+
+    .stat_item:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+
+    @keyframes statItemFadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(30px) scale(0.9);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+
+    .stat_number_wrapper {
+        display: flex;
+        align-items: baseline;
+        gap: 2px;
     }
 
     .stat_number {
-        font-size: 26px;
-        font-weight: 700;
+        font-size: 52px;
+        font-weight: 800;
         line-height: 1;
+        color: #ffffff;
+        font-family: 'Inter', sans-serif;
+        letter-spacing: -1px;
     }
 
-    .stat-sub {
-        font-size: 26px;
+    .stat_plus {
+        font-size: 42px;
         font-weight: 700;
-        line-height: 1;
+        color: #ffffff;
+        font-family: 'Inter', sans-serif;
     }
 
     .stat_label {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 500;
-        margin-top: 5px;
+        margin-top: 12px;
+        color: rgba(255, 255, 255, 0.9);
+        letter-spacing: 0.5px;
+        text-align: center;
     }
 
-    .stat_text {
-        font-size: 16px;
-        font-weight: 500;
+    /* Hover effect for stat items */
+    .stat_item:hover {
+        transform: translateY(-5px) scale(1.05);
     }
 
-    @media (max-width: 800px) {
-        .stats_container {
-            overflow: hidden;
-            text-align: center;
-            width: 100%;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
+    /* Responsive - Tablet */
+    @media (max-width: 992px) {
+        .stats_section {
+            padding: 40px 50px;
+            border-radius: 50px 50px 0 0;
         }
 
+        .stat_number {
+            font-size: 44px;
+        }
+
+        .stat_plus {
+            font-size: 36px;
+        }
+
+        .stat_label {
+            font-size: 16px;
+        }
 
         .stat_item {
-            animation: scroll 3s linear infinite;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
+            min-width: 150px;
+        }
+    }
+
+    /* Responsive - Mobile */
+    @media (max-width: 768px) {
+        .stats_section {
+            padding: 35px 30px;
+            margin: 0 15px;
+            border-radius: 40px 40px 0 0;
         }
 
+        .stats_container {
+            gap: 25px;
+        }
+
+        .stat_number {
+            font-size: 38px;
+        }
+
+        .stat_plus {
+            font-size: 30px;
+        }
+
+        .stat_label {
+            font-size: 15px;
+            margin-top: 8px;
+        }
+
+        .stat_item {
+            min-width: 120px;
+            padding: 15px;
+        }
+    }
+
+    /* Responsive - Small Mobile */
+    @media (max-width: 576px) {
+        .stats_section {
+            padding: 30px 20px;
+            margin: 0 10px;
+            border-radius: 35px 35px 0 0;
+        }
+
+        .stats_container {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .stat_number {
+            font-size: 28px;
+        }
+
+        .stat_plus {
+            font-size: 22px;
+        }
+
+        .stat_label {
+            font-size: 12px;
+            margin-top: 6px;
+        }
+
+        .stat_item {
+            min-width: auto;
+            flex: 1;
+            padding: 10px 5px;
+        }
+    }
+
+    /* Very small screens */
+    @media (max-width: 400px) {
+        .stat_number {
+            font-size: 24px;
+        }
+
+        .stat_plus {
+            font-size: 18px;
+        }
+
+        .stat_label {
+            font-size: 10px;
+        }
     }
 
     /* About Section */
@@ -628,19 +786,7 @@
             font-size: 20px;
         }
 
-        .stats_section {
-            padding: 30px 0;
-            margin: 0 15px;
-        }
 
-        .stats_container {
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .stat_item {
-            width: 90%;
-        }
 
         .home_section {
             min-height: 70vh;
@@ -762,15 +908,7 @@
             left: 0 !important;
         }
 
-        .stats_container {
-            flex-direction: column;
-            gap: 15px;
-        }
 
-        .stat_item {
-            width: 90%;
-            margin: 0 auto;
-        }
 
         .home_container {
             padding: 20px;
@@ -814,29 +952,7 @@
             font-size: 14px;
         }
 
-        .stats_section {
-            padding: 20px 0;
-            border-radius: 40px 40px 0 0;
-            margin: 0 15px;
-            height: auto;
-        }
 
-        .stat_item {
-            padding: 20px 15px;
-            border-radius: 15px;
-            background-color: #0D1322;
-            width: 90%;
-            box-shadow: 0px 4px 15px rgba(84, 180, 53, 0.3);
-        }
-
-        .stat-number {
-            font-size: 32px;
-        }
-
-        .stat_label,
-        .stat_text {
-            font-size: 14px;
-        }
 
         .about_section {
             padding: 40px 0;
