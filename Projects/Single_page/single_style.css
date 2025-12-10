@@ -277,11 +277,10 @@
 
     .home_slide_1 {
         width: 126px;
-        height: 771px;
+        /* height: 771px; */
         position: relative;
-        top: 10px;
+        /* top: 10px; */
         gap: 45px;
-
     }
 
     .home_slide_2 {
