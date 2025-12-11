@@ -4,7 +4,6 @@
     --bg-color: #000000;
     --text-color: #ffffff;
     --accent-color: #ffffff;
-    --blob-color: #808080;
     --font-main: 'Inter', sans-serif;
 }
 
@@ -730,6 +729,11 @@ body {
         overflow: visible;
         padding: 100px 20px;
     }
+
+    .timeline-block:last-child .timeline-content::before {
+    top: 0;
+    left:0;
+}
 
     .experience-education-section .container {
         height: auto;

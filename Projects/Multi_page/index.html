@@ -12,124 +12,122 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <!-- Top Banner -->
-    <div class="top_banner">
-        <div class="banner_content">
-            <span class="fire_icon">🔥</span>
-            <span class="banner_text">EARLY BIRD OFFER ENDING SOON!</span>
-            <div class="countdown">
-                <span class="countdown_item" id="days">5d</span>
-                <span class="countdown_item" id="hours">2h</span>
-                <span class="countdown_item" id="minutes">5m</span>
-                <span class="countdown_item" id="seconds">23s</span>
+    <div class="banner">
+        <div class="banner-box">
+            <span class="fire">🔥</span>
+            <span class="banner-text">EARLY BIRD OFFER ENDING SOON!</span>
+            <div class="timer">
+                <span class="timer-box" id="days">5d</span>
+                <span class="timer-box" id="hours">2h</span>
+                <span class="timer-box" id="minutes">5m</span>
+                <span class="timer-box" id="seconds">23s</span>
             </div>
         </div>
     </div>
 
     <!-- Hero Section -->
-    <section class="hero_section" id="hero">
-        <div class="hero_background">
-            <div class="hexagon_pattern"></div>
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="pattern"></div>
         </div>
 
-        <!-- Decorative Elements -->
-        <img src="images/voilet_star.png" alt="" class="floating_star star_left" aria-hidden="true">
-        <img src="images/green_star.png" alt="" class="floating_star star_right" aria-hidden="true">
-        <img src="images/pyramid.png" alt="" class="floating_pyramid" aria-hidden="true">
+        <!-- Floating Images -->
+        <img src="images/voilet_star.png" alt="" class="star star-left">
+        <img src="images/green_star.png" alt="" class="star star-right">
+        <img src="images/pyramid.png" alt="" class="pyramid">
 
-        <div class="hero_container">
-            <!-- Limited Seats Badge -->
-            <div class="limited_badge">
+        <div class="hero-box">
+            <!-- Badge -->
+            <div class="badge">
                 <i class="fa-regular fa-star"></i>
                 <span>Limited Seats Only Available</span>
             </div>
 
-            <!-- Main Heading -->
-            <h1 class="hero_title">
-                <span class="title_white">Master</span>
-                <span class="title_gradient">Ethical Hacking</span>
-                <span class="title_white">in 3 days</span>
+            <!-- Main Title -->
+            <h1 class="title">
+                <span class="white">Master</span>
+                <span class="green">Ethical Hacking</span>
+                <span class="white">in 3 days</span>
             </h1>
 
-            <!-- Subtitle -->
-            <p class="hero_subtitle">
-                Learn from industry experts at <span class="highlight_text">Google, Meta & Amazon</span> in this
-                intensive 3-day online workshop and become a certified ethical hacker
+            <!-- Description -->
+            <p class="description">
+                Learn from industry experts at <span class="highlight">Google, Meta & Amazon</span> in this intensive
+                3-day online workshop and become a certified ethical hacker
             </p>
 
             <!-- Info Cards -->
-            <div class="info_cards">
-                <div class="info_card">
-                    <div class="card_icon">
+            <div class="cards">
+                <div class="card">
+                    <div class="icon">
                         <i class="fa-regular fa-calendar"></i>
                     </div>
-                    <span class="card_label">Duration</span>
-                    <span class="card_value">3 Days</span>
+                    <span class="label">Duration</span>
+                    <span class="value">3 Days</span>
                 </div>
 
-                <div class="info_card">
-                    <div class="card_icon">
+                <div class="card">
+                    <div class="icon">
                         <i class="fa-regular fa-clock"></i>
                     </div>
-                    <span class="card_label">Time</span>
-                    <span class="card_value">9 A.M - 5 P.M</span>
+                    <span class="label">Time</span>
+                    <span class="value">9 A.M - 5 P.M</span>
                 </div>
 
-                <div class="info_card">
-                    <div class="card_icon">
+                <div class="card">
+                    <div class="icon">
                         <i class="fa-solid fa-bullseye"></i>
                     </div>
-                    <span class="card_label">Mode</span>
-                    <span class="card_value">Online</span>
+                    <span class="label">Mode</span>
+                    <span class="value">Online</span>
                 </div>
 
-                <div class="info_card">
-                    <div class="card_icon">
+                <div class="card">
+                    <div class="icon">
                         <i class="fa-solid fa-users"></i>
                     </div>
-                    <span class="card_label">Seats</span>
-                    <span class="card_value">Limited</span>
+                    <span class="label">Seats</span>
+                    <span class="value">Limited</span>
                 </div>
             </div>
 
-            <!-- Pricing Section -->
-            <div class="pricing_section">
-                <div class="price_badge">
-                    <span class="offer_text">Early Bird offer</span>
-                    <span class="divider">|</span>
-                    <span class="original_price">₹2,999</span>
-                    <span class="discounted_price">₹1,999</span>
-                    <span class="divider">|</span>
-                    <span class="discount_percent">40% Discount</span>
+            <!-- Price Section -->
+            <div class="price-section">
+                <div class="price-box">
+                    <span class="offer">Early Bird offer</span>
+                    <span class="line">|</span>
+                    <span class="old-price">₹2,999</span>
+                    <span class="new-price">₹1,999</span>
+                    <span class="line">|</span>
+                    <span class="discount">40% Discount</span>
                 </div>
 
-                <button class="cta_button" id="register-btn">
+                <button class="button" id="register-btn">
                     Register Now for ₹1,499
                 </button>
             </div>
         </div>
     </section>
 
-    <!-- About Section - We Are From Everywhere -->
-    <section class="about_section" id="about">
-        <div class="about_container">
-            <div class="about_image">
-                <img src="images/india_landmarks_1765396707249.png" alt="Indian Landmarks Illustration"
-                    class="landmarks_img">
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-box">
+            <div class="about-image">
+                <img src="images/india_landmarks_1765396707249.png" alt="Indian Landmarks" class="image">
             </div>
-            <div class="about_content">
-                <div class="section_divider"></div>
-                <h2 class="about_title">
-                    <span class="title_white">WE ARE FROM</span>
-                    <span class="title_cyan">EVERYWHERE</span>
+            <div class="about-text">
+                <div class="line-bar"></div>
+                <h2 class="about-title">
+                    <span class="white">WE ARE FROM</span>
+                    <span class="green">EVERYWHERE</span>
                 </h2>
-                <p class="about_text">
+                <p class="text">
                     At Edu Tech, learning knows no boundaries. We bring together curious minds from everywhere, creating
                     a vibrant space where knowledge grows and ideas flourish. No matter where you're from, this is your
                     place to learn, share, and belong.
@@ -138,177 +136,170 @@
         </div>
     </section>
 
-    <!-- Workshop Details Section -->
-    <section class="workshop_section" id="workshop">
-        <div class="workshop_container">
-            <h2 class="section_title">
-                <span class="title_white">Workshop</span>
-                <span class="title_cyan">Details</span>
+    <!-- Workshop Section -->
+    <section class="workshop" id="workshop">
+        <div class="workshop-box">
+            <h2 class="heading">
+                <span class="white">Workshop</span>
+                <span class="green">Details</span>
             </h2>
-            <p class="section_subtitle">
+            <p class="sub-heading">
                 Dive deep into ethical hacking with our comprehensive curriculum designed by industry experts from top
                 tech companies
             </p>
 
-            <div class="workshop_grid">
-                <div class="workshop_card">
-                    <div class="workshop_icon">
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">
                         <i class="fa-solid fa-shield-halved"></i>
                     </div>
-                    <h3 class="workshop_card_title">Penetration Testing</h3>
-                    <p class="workshop_card_text">Learn advanced techniques to identify vulnerabilities in systems and
+                    <h3 class="feature-title">Penetration Testing</h3>
+                    <p class="feature-text">Learn advanced techniques to identify vulnerabilities in systems and
                         networks</p>
                 </div>
 
-                <div class="workshop_card">
-                    <div class="workshop_icon">
+                <div class="feature">
+                    <div class="feature-icon">
                         <i class="fa-solid fa-lock"></i>
                     </div>
-                    <h3 class="workshop_card_title">Web Application Security</h3>
-                    <p class="workshop_card_text">Master OWASP Top 10 and secure coding practices for web applications
-                    </p>
+                    <h3 class="feature-title">Web Application Security</h3>
+                    <p class="feature-text">Master OWASP Top 10 and secure coding practices for web applications</p>
                 </div>
 
-                <div class="workshop_card">
-                    <div class="workshop_icon">
+                <div class="feature">
+                    <div class="feature-icon">
                         <i class="fa-solid fa-globe"></i>
                     </div>
-                    <h3 class="workshop_card_title">Network Security</h3>
-                    <p class="workshop_card_text">Understand network protocols, firewalls, and intrusion detection
-                        systems</p>
+                    <h3 class="feature-title">Network Security</h3>
+                    <p class="feature-text">Understand network protocols, firewalls, and intrusion detection systems</p>
                 </div>
 
-                <div class="workshop_card">
-                    <div class="workshop_icon">
+                <div class="feature">
+                    <div class="feature-icon">
                         <i class="fa-solid fa-bolt"></i>
                     </div>
-                    <h3 class="workshop_card_title">Hands on Labs</h3>
-                    <p class="workshop_card_text">Practice real-world scenarios with guided hacking labs and simulations
-                    </p>
+                    <h3 class="feature-title">Hands on Labs</h3>
+                    <p class="feature-text">Practice real-world scenarios with guided hacking labs and simulations</p>
                 </div>
 
-                <div class="workshop_card">
-                    <div class="workshop_icon">
+                <div class="feature">
+                    <div class="feature-icon">
                         <i class="fa-solid fa-award"></i>
                     </div>
-                    <h3 class="workshop_card_title">Industry Certification</h3>
-                    <p class="workshop_card_text">Earn recognized credentials to validate your ethical hacking skills
-                    </p>
+                    <h3 class="feature-title">Industry Certification</h3>
+                    <p class="feature-text">Earn recognized credentials to validate your ethical hacking skills</p>
                 </div>
 
-                <div class="workshop_card">
-                    <div class="workshop_icon">
+                <div class="feature">
+                    <div class="feature-icon">
                         <i class="fa-solid fa-user-group"></i>
                     </div>
-                    <h3 class="workshop_card_title">Live Sessions</h3>
-                    <p class="workshop_card_text">Engage with experts in real-time through interactive learning classes
-                    </p>
+                    <h3 class="feature-title">Live Sessions</h3>
+                    <p class="feature-text">Engage with experts in real-time through interactive learning classes</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- What You'll Learn Section -->
-    <section class="curriculum_section" id="curriculum">
-        <div class="curriculum_container">
-            <h2 class="section_title">
-                <span class="title_white">What You'll</span>
-                <span class="title_cyan">Learn</span>
+    <!-- Learn Section -->
+    <section class="learn" id="learn">
+        <div class="learn-box">
+            <h2 class="heading">
+                <span class="white">What You'll</span>
+                <span class="green">Learn</span>
             </h2>
-            <p class="section_subtitle">
+            <p class="sub-heading">
                 Dive deep into ethical hacking with our comprehensive curriculum designed by industry experts from top
                 tech companies
             </p>
 
-            <div class="curriculum_list">
-                <!-- Item 1 -->
-                <div class="curriculum_item">
-                    <div class="item_number">01</div>
-                    <div class="item_content">
-                        <h3 class="item_title">Web Vulnerabilities</h3>
-                        <p class="item_description">Identify and exploit common web application vulnerabilities</p>
+            <div class="topics">
+                <!-- Topic 1 -->
+                <div class="topic">
+                    <div class="number">01</div>
+                    <div class="topic-text">
+                        <h3 class="topic-title">Web Vulnerabilities</h3>
+                        <p class="topic-info">Identify and exploit common web application vulnerabilities</p>
                     </div>
-                    <div class="item_image">
+                    <div class="topic-image">
                         <img src="images/web_vulnerabilities_1765396723810.png" alt="Web Vulnerabilities">
                     </div>
-                    <div class="item_icon">
+                    <div class="topic-icon">
                         <i class="fa-solid fa-globe"></i>
                     </div>
                 </div>
 
-                <!-- Item 2 -->
-                <div class="curriculum_item">
-                    <div class="item_number">02</div>
-                    <div class="item_content">
-                        <h3 class="item_title">Security Tools</h3>
-                        <p class="item_description">Use industry-standard tools like Metasploit, Burp Suite, and Nmap
-                        </p>
+                <!-- Topic 2 -->
+                <div class="topic">
+                    <div class="number">02</div>
+                    <div class="topic-text">
+                        <h3 class="topic-title">Security Tools</h3>
+                        <p class="topic-info">Use industry-standard tools like Metasploit, Burp Suite, and Nmap</p>
                     </div>
-                    <div class="item_image">
+                    <div class="topic-image">
                         <img src="images/security_tools_1765396741431.png" alt="Security Tools">
                     </div>
-                    <div class="item_icon">
+                    <div class="topic-icon">
                         <i class="fa-solid fa-shield-halved"></i>
                     </div>
                 </div>
 
-                <!-- Item 3 -->
-                <div class="curriculum_item">
-                    <div class="item_number">03</div>
-                    <div class="item_content">
-                        <h3 class="item_title">Reports</h3>
-                        <p class="item_description">Create detailed vulnerability assessment reports</p>
+                <!-- Topic 3 -->
+                <div class="topic">
+                    <div class="number">03</div>
+                    <div class="topic-text">
+                        <h3 class="topic-title">Reports</h3>
+                        <p class="topic-info">Create detailed vulnerability assessment reports</p>
                     </div>
-                    <div class="item_image">
+                    <div class="topic-image">
                         <img src="images/ai_reports_1765396759760.png" alt="Reports">
                     </div>
-                    <div class="item_icon">
+                    <div class="topic-icon">
                         <i class="fa-solid fa-circle-info"></i>
                     </div>
                 </div>
 
-                <!-- Item 4 -->
-                <div class="curriculum_item">
-                    <div class="item_number">04</div>
-                    <div class="item_content">
-                        <h3 class="item_title">Network Testing</h3>
-                        <p class="item_description">Use industry-standard tools like Metasploit, Burp Suite, and Nmap
-                        </p>
+                <!-- Topic 4 -->
+                <div class="topic">
+                    <div class="number">04</div>
+                    <div class="topic-text">
+                        <h3 class="topic-title">Network Testing</h3>
+                        <p class="topic-info">Use industry-standard tools like Metasploit, Burp Suite, and Nmap</p>
                     </div>
-                    <div class="item_image">
+                    <div class="topic-image">
                         <img src="images/network_testing_1765396778472.png" alt="Network Testing">
                     </div>
-                    <div class="item_icon">
+                    <div class="topic-icon">
                         <i class="fa-solid fa-microchip"></i>
                     </div>
                 </div>
 
-                <!-- Item 5 -->
-                <div class="curriculum_item">
-                    <div class="item_number">05</div>
-                    <div class="item_content">
-                        <h3 class="item_title">Ethics & Law</h3>
-                        <p class="item_description">Understand legal and ethical aspects of cybersecurity</p>
+                <!-- Topic 5 -->
+                <div class="topic">
+                    <div class="number">05</div>
+                    <div class="topic-text">
+                        <h3 class="topic-title">Ethics & Law</h3>
+                        <p class="topic-info">Understand legal and ethical aspects of cybersecurity</p>
                     </div>
-                    <div class="item_image">
+                    <div class="topic-image">
                         <img src="images/ethics_law_1765396808234.png" alt="Ethics & Law">
                     </div>
-                    <div class="item_icon">
+                    <div class="topic-icon">
                         <i class="fa-solid fa-scale-balanced"></i>
                     </div>
                 </div>
 
-                <!-- Item 6 -->
-                <div class="curriculum_item">
-                    <div class="item_number">06</div>
-                    <div class="item_content">
-                        <h3 class="item_title">Hardening</h3>
-                        <p class="item_description">Implement security hardening techniques for systems</p>
+                <!-- Topic 6 -->
+                <div class="topic">
+                    <div class="number">06</div>
+                    <div class="topic-text">
+                        <h3 class="topic-title">Hardening</h3>
+                        <p class="topic-info">Implement security hardening techniques for systems</p>
                     </div>
-                    <div class="item_image">
+                    <div class="topic-image">
                         <img src="images/cloud_hardening_1765396824739.png" alt="Hardening">
                     </div>
-                    <div class="item_icon">
+                    <div class="topic-icon">
                         <i class="fa-solid fa-cloud"></i>
                     </div>
                 </div>

@@ -1,3 +1,4 @@
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -34,15 +35,18 @@ button {
     outline: none;
 }
 
-/* Top Banner */
-.top_banner {
+
+/* ================================
+   TOP BANNER
+================================ */
+.banner {
     background: linear-gradient(90deg, #E040FB 0%, #9B59B6 50%, #667eea 100%);
     padding: 12px 20px;
     position: relative;
     overflow: hidden;
 }
 
-.top_banner::before {
+.banner::before {
     content: '';
     position: absolute;
     top: 0;
@@ -50,10 +54,10 @@ button {
     right: 0;
     bottom: 0;
     background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.1) 50%, transparent 100%);
-    animation: shimmer 3s infinite;
+    animation: shine 3s infinite;
 }
 
-@keyframes shimmer {
+@keyframes shine {
     0% {
         transform: translateX(-100%);
     }
@@ -63,7 +67,7 @@ button {
     }
 }
 
-.banner_content {
+.banner-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,12 +76,12 @@ button {
     z-index: 1;
 }
 
-.fire_icon {
+.fire {
     font-size: 20px;
-    animation: pulse 1.5s infinite;
+    animation: beat 1.5s infinite;
 }
 
-@keyframes pulse {
+@keyframes beat {
 
     0%,
     100% {
@@ -89,7 +93,7 @@ button {
     }
 }
 
-.banner_text {
+.banner-text {
     font-family: 'Outfit', sans-serif;
     font-weight: 600;
     font-size: 14px;
@@ -97,22 +101,24 @@ button {
     text-transform: uppercase;
 }
 
-.countdown {
+.timer {
     display: flex;
     gap: 8px;
 }
 
-.countdown_item {
+.timer-box {
     background: rgba(255, 255, 255, 0.2);
     padding: 4px 10px;
     border-radius: 4px;
     font-weight: 600;
     font-size: 13px;
-    backdrop-filter: blur(5px);
 }
 
-/* Hero Section */
-.hero_section {
+
+/* ================================
+   HERO SECTION
+================================ */
+.hero {
     position: relative;
     min-height: 100vh;
     padding: 80px 20px 100px;
@@ -123,7 +129,7 @@ button {
     background: #0A1628;
 }
 
-.hero_background {
+.hero-bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -132,7 +138,7 @@ button {
     z-index: 0;
 }
 
-.hexagon_pattern {
+.pattern {
     position: absolute;
     top: 0;
     left: 0;
@@ -144,28 +150,27 @@ button {
     opacity: 0.4;
 }
 
-/* Floating Decorative Elements */
-.floating_star {
+/* Floating Stars */
+.star {
     position: absolute;
     z-index: 2;
     animation: float 6s ease-in-out infinite;
 }
 
-.star_left {
+.star-left {
     left: 8%;
     top: 35%;
     width: 100px;
-    animation-delay: 0s;
 }
 
-.star_right {
+.star-right {
     right: 8%;
     top: 15%;
     width: 120px;
     animation-delay: 1s;
 }
 
-.floating_pyramid {
+.pyramid {
     position: absolute;
     right: 10%;
     bottom: 15%;
@@ -187,7 +192,7 @@ button {
     }
 }
 
-.hero_container {
+.hero-box {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
@@ -195,8 +200,8 @@ button {
     z-index: 5;
 }
 
-/* Limited Badge */
-.limited_badge {
+/* Badge */
+.badge {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -218,20 +223,20 @@ button {
     }
 }
 
-.limited_badge i {
+.badge i {
     color: #00E5A0;
     font-size: 16px;
 }
 
-.limited_badge span {
+.badge span {
     font-family: 'Outfit', sans-serif;
     font-weight: 500;
     font-size: 14px;
     color: #00E5A0;
 }
 
-/* Hero Title */
-.hero_title {
+/* Title */
+.title {
     font-family: 'Outfit', sans-serif;
     font-size: 72px;
     font-weight: 800;
@@ -239,12 +244,12 @@ button {
     margin-bottom: 30px;
 }
 
-.title_white {
+.white {
     display: block;
     color: #FFFFFF;
 }
 
-.title_gradient {
+.green {
     display: block;
     background: linear-gradient(135deg, #00E5A0 0%, #00D9FF 100%);
     -webkit-background-clip: text;
@@ -252,13 +257,8 @@ button {
     background-clip: text;
 }
 
-.title_cyan {
-    display: block;
-    color: #00E5A0;
-}
-
-/* Hero Subtitle */
-.hero_subtitle {
+/* Description */
+.description {
     font-size: 18px;
     color: #B8C5D6;
     max-width: 700px;
@@ -266,21 +266,21 @@ button {
     line-height: 1.7;
 }
 
-.highlight_text {
+.highlight {
     color: #00E5A0;
     font-weight: 600;
 }
 
-/* Info Cards */
-.info_cards {
+/* Cards Grid */
+.cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 25% 25% 25% 25%;
     gap: 20px;
     max-width: 900px;
     margin: 0 auto 50px;
 }
 
-.info_card {
+.card {
     background: rgba(13, 27, 42, 0.8);
     border: 1px solid rgba(0, 229, 160, 0.3);
     border-radius: 12px;
@@ -294,7 +294,7 @@ button {
     overflow: hidden;
 }
 
-.info_card::before {
+.card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -306,17 +306,17 @@ button {
     transition: 0.3s ease;
 }
 
-.info_card:hover {
+.card:hover {
     transform: translateY(-5px);
     background: rgba(20, 40, 60, 0.9);
     box-shadow: 0 0 30px rgba(0, 229, 160, 0.3);
 }
 
-.info_card:hover::before {
+.card:hover::before {
     opacity: 1;
 }
 
-.card_icon {
+.icon {
     width: 50px;
     height: 50px;
     display: flex;
@@ -326,27 +326,27 @@ button {
     font-size: 28px;
 }
 
-.card_label {
+.label {
     font-size: 14px;
     color: #6B7A8F;
 }
 
-.card_value {
+.value {
     font-family: 'Outfit', sans-serif;
     font-size: 16px;
     font-weight: 600;
     color: #FFFFFF;
 }
 
-/* Pricing Section */
-.pricing_section {
+/* Price Section */
+.price-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 25px;
 }
 
-.price_badge {
+.price-box {
     display: inline-flex;
     align-items: center;
     gap: 15px;
@@ -356,33 +356,33 @@ button {
     border-radius: 50px;
 }
 
-.offer_text {
+.offer {
     font-weight: 500;
     color: #FFFFFF;
 }
 
-.divider {
+.line {
     color: #6B7A8F;
 }
 
-.original_price {
+.old-price {
     text-decoration: line-through;
     color: #6B7A8F;
 }
 
-.discounted_price {
+.new-price {
     color: #00E5A0;
     font-weight: 700;
     font-size: 18px;
 }
 
-.discount_percent {
+.discount {
     color: #00E5A0;
     font-weight: 600;
 }
 
-/* CTA Button */
-.cta_button {
+/* Button */
+.button {
     background: linear-gradient(135deg, #00E5A0 0%, #00D9FF 100%);
     color: #0A1628;
     font-family: 'Outfit', sans-serif;
@@ -396,7 +396,7 @@ button {
     overflow: hidden;
 }
 
-.cta_button::before {
+.button::before {
     content: '';
     position: absolute;
     top: 0;
@@ -407,47 +407,50 @@ button {
     transition: 0.5s;
 }
 
-.cta_button:hover {
+.button:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 40px rgba(0, 229, 160, 0.5);
 }
 
-.cta_button:hover::before {
+.button:hover::before {
     left: 100%;
 }
 
-/* About Section */
-.about_section {
+
+/* ================================
+   ABOUT SECTION
+================================ */
+.about {
     background: #0D1B2A;
     padding: 100px 20px;
     position: relative;
 }
 
-.about_container {
+.about-box {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     gap: 80px;
     align-items: center;
 }
 
-.about_image {
+.about-image {
     position: relative;
 }
 
-.landmarks_img {
+.image {
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
     filter: drop-shadow(0 0 30px rgba(0, 229, 160, 0.2));
 }
 
-.about_content {
+.about-text {
     padding: 20px 0;
 }
 
-.section_divider {
+.line-bar {
     width: 60px;
     height: 4px;
     background: #00E5A0;
@@ -455,7 +458,7 @@ button {
     border-radius: 2px;
 }
 
-.about_title {
+.about-title {
     font-family: 'Outfit', sans-serif;
     font-size: 48px;
     font-weight: 800;
@@ -465,24 +468,33 @@ button {
     letter-spacing: 2px;
 }
 
-.about_text {
+.about-title .green {
+    color: #00E5A0;
+    background: none;
+    -webkit-text-fill-color: #00E5A0;
+}
+
+.text {
     font-size: 17px;
     color: #B8C5D6;
     line-height: 1.8;
 }
 
-/* Workshop Section */
-.workshop_section {
+
+/* ================================
+   WORKSHOP SECTION
+================================ */
+.workshop {
     background: #0A1628;
     padding: 100px 20px;
 }
 
-.workshop_container {
+.workshop-box {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.section_title {
+.heading {
     font-family: 'Outfit', sans-serif;
     font-size: 48px;
     font-weight: 800;
@@ -490,7 +502,13 @@ button {
     margin-bottom: 20px;
 }
 
-.section_subtitle {
+.heading .green {
+    color: #00E5A0;
+    background: none;
+    -webkit-text-fill-color: #00E5A0;
+}
+
+.sub-heading {
     font-size: 17px;
     color: #B8C5D6;
     text-align: center;
@@ -499,22 +517,22 @@ button {
     line-height: 1.7;
 }
 
-.workshop_grid {
+.features {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 33.33% 33.33% 33.33%;
     gap: 40px;
 }
 
-.workshop_card {
+.feature {
     padding: 30px;
     transition: 0.3s ease;
 }
 
-.workshop_card:hover {
+.feature:hover {
     transform: translateY(-5px);
 }
 
-.workshop_icon {
+.feature-icon {
     width: 60px;
     height: 60px;
     display: flex;
@@ -525,7 +543,7 @@ button {
     font-size: 40px;
 }
 
-.workshop_card_title {
+.feature-title {
     font-family: 'Outfit', sans-serif;
     font-size: 20px;
     font-weight: 600;
@@ -533,32 +551,35 @@ button {
     margin-bottom: 15px;
 }
 
-.workshop_card_text {
+.feature-text {
     font-size: 15px;
     color: #B8C5D6;
     line-height: 1.7;
 }
 
-/* Curriculum Section */
-.curriculum_section {
+
+/* ================================
+   LEARN SECTION
+================================ */
+.learn {
     background: #0D1B2A;
     padding: 100px 20px;
 }
 
-.curriculum_container {
+.learn-box {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.curriculum_list {
+.topics {
     border: 2px solid #00E5A0;
     border-radius: 20px;
     overflow: hidden;
 }
 
-.curriculum_item {
+.topic {
     display: grid;
-    grid-template-columns: 80px 1fr 200px 60px;
+    grid-template-columns: 80px auto 200px 60px;
     align-items: center;
     gap: 30px;
     padding: 30px 40px;
@@ -566,28 +587,28 @@ button {
     transition: 0.3s ease;
 }
 
-.curriculum_item:last-child {
+.topic:last-child {
     border-bottom: none;
 }
 
-.curriculum_item:hover {
+.topic:hover {
     border-top: 3px solid rgba(0, 229, 160, 0.3);
     border-bottom: 3px solid rgba(0, 229, 160, 0.3);
     background: rgba(0, 229, 160, 0.05);
 }
 
-.item_number {
+.number {
     font-family: 'Outfit', sans-serif;
     font-size: 24px;
     font-weight: 300;
     color: #6B7A8F;
 }
 
-.item_content {
+.topic-text {
     flex: 1;
 }
 
-.item_title {
+.topic-title {
     font-family: 'Outfit', sans-serif;
     font-size: 22px;
     font-weight: 700;
@@ -595,31 +616,31 @@ button {
     margin-bottom: 8px;
 }
 
-.item_description {
+.topic-info {
     font-size: 15px;
     color: #00E5A0;
     line-height: 1.5;
 }
 
-.item_image {
+.topic-image {
     width: 180px;
     height: 80px;
     border-radius: 12px;
     overflow: hidden;
 }
 
-.item_image img {
+.topic-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: 0.3s ease;
 }
 
-.curriculum_item:hover .item_image img {
+.topic:hover .topic-image img {
     transform: scale(1.1);
 }
 
-.item_icon {
+.topic-icon {
     width: 50px;
     height: 50px;
     background: #FFFFFF;
@@ -632,187 +653,201 @@ button {
     font-size: 20px;
 }
 
-.curriculum_item:hover .item_icon {
+.topic:hover .topic-icon {
     background: #00E5A0;
     transform: rotate(360deg);
 }
 
-/* Responsive Styles */
+
+/* ================================
+   RESPONSIVE - TABLET
+================================ */
 @media screen and (max-width: 1024px) {
-    .hero_title {
+    .title {
         font-size: 56px;
     }
 
-    .info_cards {
-        grid-template-columns: repeat(2, 1fr);
+    .cards {
+        grid-template-columns: 50% 50%;
     }
 
-    .about_container {
+    .about-box {
         gap: 50px;
     }
 
-    .about_title {
+    .about-title {
         font-size: 40px;
     }
 
-    .workshop_grid {
-        grid-template-columns: repeat(2, 1fr);
+    .features {
+        grid-template-columns: 50% 50%;
     }
 
-    .curriculum_item {
-        grid-template-columns: 60px 1fr 150px 50px;
+    .topic {
+        grid-template-columns: 60px auto 150px 50px;
         gap: 20px;
         padding: 25px 30px;
     }
 }
 
+
+/* ================================
+   RESPONSIVE - MOBILE
+================================ */
 @media screen and (max-width: 768px) {
-    .top_banner {
+    .banner {
         padding: 10px 15px;
     }
 
-    .banner_content {
+    .banner-box {
         flex-wrap: wrap;
         gap: 10px;
     }
 
-    .banner_text {
+    .banner-text {
         font-size: 12px;
     }
 
-    .countdown_item {
+    .timer-box {
         padding: 3px 8px;
         font-size: 11px;
     }
 
-    .hero_section {
+    .hero {
         padding: 60px 20px 80px;
     }
 
-    .hero_title {
+    .title {
         font-size: 42px;
     }
 
-    .hero_subtitle {
+    .description {
         font-size: 16px;
     }
 
-    .floating_star {
+    .star {
         width: 60px !important;
     }
 
-    .floating_pyramid {
+    .pyramid {
         width: 50px;
     }
 
-    .info_cards {
-        grid-template-columns: 1fr 1fr;
+    .cards {
+        grid-template-columns: 50% 50%;
         gap: 15px;
     }
 
-    .info_card {
+    .card {
         padding: 20px 15px;
     }
 
-    .price_badge {
+    .price-box {
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
         padding: 15px 20px;
     }
 
-    .cta_button {
+    .button {
         padding: 16px 40px;
         font-size: 16px;
     }
 
-    .about_container {
-        grid-template-columns: 1fr;
+    .about-box {
+        grid-template-columns: 100%;
         gap: 40px;
         text-align: center;
     }
 
-    .section_divider {
+    .line-bar {
         margin: 0 auto 25px;
     }
 
-    .about_title {
+    .about-title {
         font-size: 36px;
     }
 
-    .section_title {
+    .heading {
         font-size: 36px;
     }
 
-    .workshop_grid {
-        grid-template-columns: 1fr;
+    .features {
+        grid-template-columns: 100%;
         gap: 30px;
     }
 
-    .workshop_card {
+    .feature {
         text-align: center;
     }
 
-    .workshop_icon {
+    .feature-icon {
         margin: 0 auto 20px;
     }
 
-    .curriculum_item {
-        grid-template-columns: 1fr;
+    .topic {
+        grid-template-columns: 100%;
         gap: 15px;
         padding: 25px 20px;
         text-align: center;
     }
 
-    .item_number {
+    .number {
         font-size: 20px;
     }
 
-    .item_image {
+    .topic-image {
         width: 100%;
         height: 120px;
         margin: 10px auto;
     }
 
-    .item_icon {
+    .topic-icon {
         margin: 0 auto;
     }
 }
 
+
+/* ================================
+   RESPONSIVE - SMALL MOBILE
+================================ */
 @media screen and (max-width: 480px) {
-    .hero_title {
+    .title {
         font-size: 32px;
     }
 
-    .limited_badge {
+    .badge {
         padding: 8px 18px;
         font-size: 12px;
     }
 
-    .info_cards {
-        grid-template-columns: 1fr;
+    .cards {
+        grid-template-columns: 100%;
     }
 
-    .about_title {
+    .about-title {
         font-size: 28px;
     }
 
-    .section_title {
+    .heading {
         font-size: 28px;
     }
 
-    .price_badge {
+    .price-box {
         font-size: 14px;
     }
 
-    .cta_button {
+    .button {
         width: 100%;
         padding: 16px 30px;
     }
 }
 
-/* Fade In Animations */
-@keyframes fadeInUp {
+
+/* ================================
+   ANIMATIONS
+================================ */
+@keyframes fadeUp {
     from {
         opacity: 0;
         transform: translateY(30px);
@@ -824,72 +859,72 @@ button {
     }
 }
 
-.info_card,
-.workshop_card,
-.curriculum_item {
-    animation: fadeInUp 0.6s ease forwards;
+.card,
+.feature,
+.topic {
+    animation: fadeUp 0.6s ease forwards;
 }
 
-.info_card:nth-child(1) {
+.card:nth-child(1) {
     animation-delay: 0.1s;
 }
 
-.info_card:nth-child(2) {
+.card:nth-child(2) {
     animation-delay: 0.2s;
 }
 
-.info_card:nth-child(3) {
+.card:nth-child(3) {
     animation-delay: 0.3s;
 }
 
-.info_card:nth-child(4) {
+.card:nth-child(4) {
     animation-delay: 0.4s;
 }
 
-.workshop_card:nth-child(1) {
+.feature:nth-child(1) {
     animation-delay: 0.1s;
 }
 
-.workshop_card:nth-child(2) {
+.feature:nth-child(2) {
     animation-delay: 0.2s;
 }
 
-.workshop_card:nth-child(3) {
+.feature:nth-child(3) {
     animation-delay: 0.3s;
 }
 
-.workshop_card:nth-child(4) {
+.feature:nth-child(4) {
     animation-delay: 0.4s;
 }
 
-.workshop_card:nth-child(5) {
+.feature:nth-child(5) {
     animation-delay: 0.5s;
 }
 
-.workshop_card:nth-child(6) {
+.feature:nth-child(6) {
     animation-delay: 0.6s;
 }
 
-.curriculum_item:nth-child(1) {
+.topic:nth-child(1) {
     animation-delay: 0.1s;
 }
 
-.curriculum_item:nth-child(2) {
+.topic:nth-child(2) {
     animation-delay: 0.2s;
 }
 
-.curriculum_item:nth-child(3) {
+.topic:nth-child(3) {
     animation-delay: 0.3s;
 }
 
-.curriculum_item:nth-child(4) {
+.topic:nth-child(4) {
     animation-delay: 0.4s;
 }
 
-.curriculum_item:nth-child(5) {
+.topic:nth-child(5) {
     animation-delay: 0.5s;
 }
 
-.curriculum_item:nth-child(6) {
+.topic:nth-child(6) {
     animation-delay: 0.6s;
 }
