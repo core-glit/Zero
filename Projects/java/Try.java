@@ -42,24 +42,33 @@ catch(){
 
 //it is used to a method signature to declare with checked exception the method might throw informing the caller to handle  the thing.
 
-
+//once we use return on try block it will not execute the catch block and 
 
 //exception handling
+
+//nested try catch block is possible 
+
 public class Try {
 
     public static void main(String[] args) {
-        try{
-            int[] a = new int[5];
-            a[10] = 10;
-        }
-        catch(Exception e){
-            e.printStackTrace();
-        }
 
-        int d=50*2;
-        System.out.println(d);
+    
+    //multiple catch block  
+    try{
+        int[] a = new int[5];
+        a[10] = 10;
     }
     
+    catch(ArithmeticException d){
+        d.printStackTrace();
+    }
+    catch(ArrayIndexOutOfBoundsException f){
+        f.printStackTrace();
+    }
+    catch(Exception e){
+        e.printStackTrace();
+    }
+    }    
 }
 
 
