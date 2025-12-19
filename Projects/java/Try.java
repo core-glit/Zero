@@ -58,7 +58,6 @@ public class Try {
         int[] a = new int[5];
         a[10] = 10;
     }
-    
     catch(ArithmeticException d){
         d.printStackTrace();
     }
@@ -71,6 +70,7 @@ public class Try {
     finally{
         System.out.println("finally block");
     }    
+}
 }
 
 
