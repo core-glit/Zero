@@ -1173,181 +1173,168 @@ video {
 
 
 
+/* ------------------ Page 8 --------------- */
+
 .page8 {
     height: 100vh;
     background: url("./soo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
+    background-position: center;
     text-align: center;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
 }
 
 /* Section */
 .sect {
-    padding: 50px 0;
+    padding: 0;
     text-align: center;
-    /* height: 70vh; */
-
-
+    width: 100%;
 }
 
 .p8toptext {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* gap: 30px; */
+    margin-bottom: 80px;
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.p8leftline {
-
-    background-color: whitesmoke;
-    height: 1px;
-    width: 21%;
-    margin-top: -50px;
-}
-
+.p8leftline,
 .p8rightline {
-
-    background-color: whitesmoke;
-    height: 1px;
-    width: 21%;
-    margin-top: -50px;
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 2px;
+    flex-grow: 1;
+    margin-top: 10px;
 }
 
 .title {
-    font-size: 44px;
-    margin-top: 60px;
-    margin-bottom: 110px;
+    font-size: 55px;
+    margin: 0 30px;
     color: #fff;
-    opacity: 0;
-    animation: fadeIn 1s ease forwards;
     font-family: "Pacifico", cursive;
-
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
 }
 
-/* Animation for cards */
-.animate {
-    opacity: 0;
-    transform: translateY(40px);
-    animation: slideUp 1s ease forwards;
-}
-
-.delay {
-    animation-delay: 0.4s;
-}
-
-/* box */
+/* Card Container */
 .cardmain {
     display: flex;
-    justify-content: end;
-
-    gap: 70px;
-    padding-right: 70px;
-    margin-top: 10px;
+    justify-content: center;
+    gap: 80px;
+    padding: 0 20px;
+    align-items: start;
+    flex-wrap: wrap;
 }
 
 .p8cards {
-
-    height: 300px;
-    width: 450px;
-    background-color: rgb(88, 50, 26);
+    height: auto;
+    min-height: 320px;
+    width: 500px;
+    /* Wider card as per design */
+    background-color: rgb(111, 78, 55);
+    /* Coffee brown matches design */
     position: relative;
-    border-radius: 10px;
-
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
+    padding: 70px 30px 40px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    margin-top: 40px;
+    /* Space for protruding elements */
 }
 
-
+/* Profile Image - Top Left Overlap */
 .uimg1 {
-    height: 110px;
-    width: 110px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
-    border: 10px solid #C7A37C;
+    border: 8px solid #C7A37C;
+    /* Beige border */
     position: absolute;
-    top: -50px;
-    left: 20px;
+    top: -40px;
+    left: -20px;
+    /* Slight overlap on left */
+    z-index: 2;
+    object-fit: cover;
 }
 
-.pop {
-    animation: popIn 0.8s ease forwards;
-}
-
-.pop.delay {
-    animation-delay: 0.5s;
-}
-
-/* Rating stars fade-in */
+/* Rating Box - Top Center/Right Overlap */
 .rating {
-    margin-top: -20px;
-    background: #e1c2a8;
-
-    color: #68210c;
-    padding: 10px 10px;
-    border-radius: 12px;
-    font-size: 22px;
-    font-weight: 500;
-    opacity: 1;
-    width: 170px;
+    position: absolute;
+    top: -25px;
+    right: 40px;
+    /* Positioned towards right as per design */
+    background: #ffffff;
+    color: #FF7F50;
+    /* Orange stars */
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    width: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    letter-spacing: 2px;
 }
-
-.fade-stars {
-    animation: fadeIn 1s ease forwards;
-    animation-delay: 0.8s;
-}
-
 
 .ratingtext {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width: 270px;
+    text-align: center;
+    width: 100%;
 }
 
-/* Text */
+/* Testimonial Typography */
 .test-title {
-    margin-top: 10px;
-    font-size: 30px;
-    font-weight: 400;
-    color: aliceblue;
-}
-
-.fade-stars {
-    background-color: white;
-    font-size: 20px;
-    color: orangered;
-    border: 10px solid #C7A37C;
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-family: 'Spectral', serif;
 }
 
 .test-text {
-    margin-top: 15px;
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 25px;
-    color: #f5f0eb;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e0e0e0;
+    font-style: italic;
+    margin-bottom: 25px;
 }
 
 .author {
-    margin-top: 15px;
-    color: rgba(84, 221, 139, 1);
-    font-size: 15px;
-    font-weight: 600;
+    color: #90EE90;
+    /* Light Green */
+    font-size: 16px;
+    font-weight: 700;
     margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .time {
     font-size: 13px;
-    margin-top: 0px;
-    font-weight: 500;
-    color: #e7e3df;
+    color: #bdbdbd;
+    font-weight: 400;
 }
 
 /* Dots */
 .dots {
-    margin-top: 30px;
-    margin-left: 250px;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    /* Reset previous margin */
 }
 
 .dots span {
@@ -1355,10 +1342,101 @@ video {
     width: 12px;
     height: 12px;
     background: #fff;
-    margin: 0 6px;
+    margin: 0 8px;
     border-radius: 50%;
-    opacity: 8.2;
+    opacity: 0.5;
+    transition: opacity 0.3s;
 }
+
+.dots span:nth-child(2) {
+    opacity: 1;
+    /* Active dot simulation */
+    transform: scale(1.2);
+}
+
+
+/* Animation for cards */
+/* Animation Classes */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 1s ease;
+}
+
+.reveal-left.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 1s ease;
+}
+
+.reveal-right.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Specific Delay Utilities */
+.delay-100 {
+    transition-delay: 0.1s;
+}
+
+.delay-200 {
+    transition-delay: 0.2s;
+}
+
+.delay-300 {
+    transition-delay: 0.3s;
+}
+
+.delay-400 {
+    transition-delay: 0.4s;
+}
+
+.delay-500 {
+    transition-delay: 0.5s;
+}
+
+/* Keep existing keyframes for reference or other uses if needed, but primary scroll animation is now via transition */
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.4);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
 
 /* ------------------------------------
    Animations
@@ -1932,91 +2010,189 @@ iframe {
 }
 
 /* Mobile Landscape & Small Tablets (max-width: 768px) */
+/* Mobile Landscape & Small Tablets (max-width: 768px) */
 @media only screen and (max-width: 768px) {
+
+    /* General Resets */
+    body,
+    html {
+        overflow-x: hidden;
+    }
+
+    .container {
+        height: auto;
+        min-height: 100vh;
+    }
+
     nav {
-        padding: 5px 15px;
+        padding: 10px 20px;
         height: 70px;
+        position: relative;
+        z-index: 101;
     }
 
     nav h1 {
         font-size: 28px;
+        padding: 0;
     }
 
     .do img {
         width: 45px;
         height: 35px;
+        margin-top: 5px;
+    }
+
+    /* Mobile Menu Override */
+    .subNav {
+        width: 100%;
+        /* Full width for better mobile experience */
+        left: -100%;
+        top: 70px;
+        /* Match nav height */
+        padding: 20px;
+        border-radius: 0 0 20px 20px;
+        align-items: center;
+        background-color: rgba(208, 174, 172, 0.95);
+        backdrop-filter: blur(5px);
+    }
+
+    input:checked~.subNav {
+        left: 0;
+    }
+
+    /* Hero Section */
+    .box1 {
+        padding: 20px;
+        margin-top: 10px;
+        height: auto;
     }
 
     .content h1 {
-        font-size: 32px;
+        font-size: 36px;
+        line-height: 1.2;
     }
 
     .content h2 {
         font-size: 18px;
+        margin-bottom: 10px;
     }
 
     .content p {
         font-size: 16px;
+        line-height: 1.5;
     }
 
     .content img {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
+        position: relative;
+        /* Change from absolute to relative to flow with text */
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+
+    .box img {
+        margin-top: 20px;
+        width: 90%;
+        max-width: 350px;
     }
 
     button {
-        width: 50%;
+        width: 60%;
+        padding: 12px;
+        font-size: 16px;
     }
 
     /* Page 2 */
+    .page2 {
+        padding: 40px 20px;
+    }
+
     .p2text h1 {
-        font-size: 35px;
+        font-size: 36px;
+        text-align: center;
     }
 
     .p2p1,
     .p2p2 {
-        font-size: 16px !important;
+        font-size: 18px !important;
+        position: relative;
+        bottom: auto;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .p2slide {
+        height: 300px;
+        margin-top: 30px;
     }
 
     .p2imgtext1 {
         margin-left: 30px;
-        font-size: 25px;
+        font-size: 28px;
     }
 
     .p2imgtext2 p {
-        width: 80%;
-        margin-left: 30px;
-        font-size: 20px;
+        width: 90%;
+        margin-left: 20px;
+        font-size: 22px;
     }
 
-    /* Video */
+    /* Video Section */
+    .videocontainer {
+        min-height: auto;
+        padding-bottom: 50px;
+    }
+
     video {
         border-radius: 40px 40px 0 0;
     }
 
     .text {
-        top: 30px;
-        left: 20px;
+        position: relative;
+        top: auto;
+        left: auto;
+        padding: 20px;
+        text-align: center;
     }
 
     .text h1 {
-        font-size: 32px;
-        padding: 15px;
+        font-size: 36px;
+        padding: 10px 0;
     }
 
     .text p {
         font-size: 16px;
-        padding: 5px 15px;
+        padding: 10px;
+    }
+
+    .out {
+        margin-top: 20px;
     }
 
     .out button {
-        width: 50%;
+        width: 60%;
         font-size: 16px;
     }
 
-    /* Page 4 */
+    /* Page 4 - Manufacturing */
+    .page4 {
+        border-radius: 60px 60px 0 0;
+    }
+
     .p4tophead h1 {
         font-size: 32px;
+        padding-top: 20px;
+    }
+
+    .p4botbox1 {
+        position: relative;
+        height: auto;
+        margin-top: 40px;
+        flex-direction: column;
+        gap: 50px;
+        padding-bottom: 50px;
     }
 
     .p4b {
@@ -2024,55 +2200,86 @@ iframe {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 0 !important;
+        /* Reset margins */
     }
 
     .p4b1t1 {
-        width: 150px;
-        height: 150px;
+        width: 160px;
+        height: 160px;
+        margin: 0 auto;
+    }
+
+    .p4in1 {
+        width: 60px;
+        height: 60px;
     }
 
     .p4b p {
         text-align: center;
         margin-top: 20px;
-    }
-
-    .p4b2 {
-        margin-top: 0;
-    }
-
-    .p4b1t2 {
-        margin-top: 0;
+        font-size: 16px;
+        width: 80%;
     }
 
     /* Page 5 */
+    .page5 {
+        border-radius: 60px 60px 0 0;
+        height: auto;
+        padding-bottom: 60px;
+    }
+
     .p5toptext h1 {
         font-size: 32px;
     }
 
     .p5toptext p {
         width: 90%;
-        font-size: 14px;
+        font-size: 16px;
+    }
+
+    .p5botimg {
+        flex-direction: column;
+        height: auto;
+        gap: 30px;
+        margin-top: 30px;
     }
 
     .p5img,
     .pe {
-        width: 90%;
+        width: 100%;
+        max-width: 350px;
         height: 300px;
+        margin-top: 0;
+    }
+
+    .pe:hover {
+        transform: none;
+        /* Disable hover scale on touch */
+    }
+
+    .p5btdiv {
+        margin-top: 30px;
     }
 
     .p5bt {
-        margin-top: 50px;
+        margin-top: 0;
     }
 
-    /* Page 6 */
+    /* Page 6 - Menu */
+    .page6 {
+        border-radius: 60px 60px 0 0;
+        height: auto;
+    }
+
     .p6h1 {
         align-items: center;
-        margin-top: 40px;
+        margin-top: 50px;
+        text-align: center;
     }
 
     .p6h1 h1 {
-        font-size: 28px;
-        text-align: center;
+        font-size: 30px;
     }
 
     .p61h1,
@@ -2080,76 +2287,112 @@ iframe {
         margin-right: 0;
     }
 
+    .p6bottomcard {
+        padding: 40px 20px;
+        gap: 40px;
+    }
+
     .p6cards {
-        width: 80%;
-        height: 420px;
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        min-height: 400px;
+        margin-bottom: 20px;
+    }
+
+    .cardtopimg {
+        margin-top: -50px;
     }
 
     .cardtopimg img {
-        width: 70%;
+        width: 150px;
     }
 
     .cardtext {
-        padding: 15px;
+        padding: 20px;
     }
 
-    .cardtext p {
-        font-size: 15px;
+    /* Page 7 - Hours */
+    .page7 {
+        height: auto;
+        padding-bottom: 50px;
     }
 
-    .cardtext h2 {
-        font-size: 20px;
+    .p7frontdiv {
+        flex-direction: column;
     }
 
-    /* Page 7 */
     .p7b11 {
-        height: 100px;
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        margin-bottom: 20px;
     }
 
     .p7b11 h1 {
         font-size: 32px;
-    }
-
-    .p7in h2 {
-        font-size: 22px;
+        text-align: center;
     }
 
     .p7box2 {
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
+        margin-top: 20px;
     }
 
     .p7in {
         width: 100%;
-        align-items: center;
         text-align: center;
     }
 
-    /* Page 8 */
-    .title {
-        font-size: 28px;
-        margin-bottom: 80px;
+    /* Page 8 - Testimonials */
+    .page8 {
+        padding-bottom: 80px;
     }
 
-    .p8leftline,
-    .p8rightline {
-        display: none;
+    .title {
+        font-size: 32px;
+        margin-bottom: 60px;
+    }
+
+    .cardmain {
+        padding-right: 0;
+        justify-content: center;
+        gap: 60px;
     }
 
     .p8cards {
-        width: 95%;
-        height: 280px;
+        width: 90%;
+        max-width: 380px;
+        height: auto;
+        min-height: 250px;
+        padding-bottom: 20px;
     }
 
-    .test-title {
-        font-size: 24px;
+    .dots {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 40px;
     }
 
-    .ratingtext {
+    /* Page 10 - Contact */
+    .page10 {
+        padding-bottom: 40px;
+    }
+
+    .p10box {
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .p10box1,
+    .p10box2,
+    .p10box3 {
         width: 100%;
+        padding: 20px;
+        align-items: center;
     }
 
-    /* Page 10 */
     .p10sweet {
         font-size: 32px;
     }
@@ -2158,37 +2401,22 @@ iframe {
         font-size: 45px;
     }
 
-    .p10leftimg {
-        width: 60px;
-        height: 50px;
-    }
-
-    .p10box1 p,
-    .p10box2 a,
-    .p10box3 p {
-        font-size: 18px;
-    }
-
     .poi {
         width: 200px;
         height: 200px;
-    }
-
-    .p10div2 p {
-        font-size: 14px;
-        text-align: center;
+        margin-top: 20px;
     }
 }
 
 /* Mobile Portrait (max-width: 480px) */
 @media only screen and (max-width: 480px) {
+
     nav {
-        height: 65px;
+        padding: 10px 15px;
     }
 
     nav h1 {
-        font-size: 22px;
-        padding: 5px;
+        font-size: 24px;
     }
 
     .do img {
@@ -2196,327 +2424,103 @@ iframe {
         height: 30px;
     }
 
-    .subNav {
-        width: 75%;
-    }
-
-    .subNav a {
-        font-size: 16px;
+    .content h1 {
+        font-size: 28px;
     }
 
     .box1 {
-        padding: 20px;
+        padding: 15px;
     }
 
-    .content h1 {
-        font-size: 26px;
-    }
-
-    .content h2 {
-        font-size: 14px;
-    }
-
-    .content p {
-        font-size: 14px;
-    }
-
-    .content img {
-        width: 50px;
-        height: 50px;
+    .box img {
+        width: 100%;
     }
 
     button {
-        width: 60%;
-        padding: 10px;
-        font-size: 14px;
+        width: 80%;
     }
 
-    /* Page 2 */
-    .page2 {
-        padding: 20px 15px;
-    }
-
+    /* Page 2 Fine Tuning */
     .p2text h1 {
         font-size: 28px;
     }
 
     .p2slide {
         height: 250px;
-        border-radius: 20px;
     }
 
-    .p2slidediv1 {
-        border-radius: 20px;
+    /* Video Mobile */
+    .text h1 {
+        font-size: 28px;
     }
 
-    .p2imgtext1 {
-        margin-left: 20px;
-        font-size: 20px;
-    }
-
-    .p2imgtext1 p {
-        font-size: 16px;
-    }
-
-    .p2imgtext2 p {
-        font-size: 16px;
-        width: 90%;
-        margin-left: 15px;
-    }
-
-    @keyframes p2animation {
-        0% {
-            transform: translateY(0px);
-        }
-
-        50% {
-            transform: translateY(-250px);
-        }
-
-        100% {
-            transform: translateY(0px);
-        }
-    }
-
-    /* Video */
-    .videocontainer {
-        min-height: 60vh;
-    }
-
-    video {
+    .videocontainer video {
         border-radius: 30px 30px 0 0;
     }
 
-    .text {
-        top: 20px;
-        left: 10px;
-        right: 10px;
-    }
-
-    .text h1 {
-        font-size: 24px;
-        padding: 10px;
-    }
-
-    .text p {
-        font-size: 14px;
-        padding: 5px 10px;
-    }
-
-    .out button {
-        width: 70%;
-        font-size: 14px;
-        padding: 10px;
-        border-radius: 25px;
-    }
-
-    /* Page 4 */
-    .page4 {
-        border-radius: 50px 50px 0 0;
-    }
-
-    .p4backimage img {
-        border-radius: 50px 50px 0 0;
-    }
-
-    .backgroundcolordiv {
-        border-radius: 50px 50px 0 0;
+    /* Page 4 Mobile */
+    .page4,
+    .page5,
+    .page6 {
+        border-radius: 40px 40px 0 0;
     }
 
     .p4tophead h1 {
-        font-size: 24px;
-    }
-
-    .p4botbox1 {
-        margin-top: 30px;
-        gap: 40px;
+        font-size: 26px;
     }
 
     .p4b1t1 {
-        width: 130px;
-        height: 130px;
+        width: 140px;
+        height: 140px;
     }
 
-    .p4in1 {
-        width: 50px;
-        height: 50px;
-        font-size: 12px;
-        border-width: 5px;
-    }
-
-    .p4in1 h2 {
-        font-size: 14px;
-    }
-
-    .p4b p {
-        font-size: 13px;
-        padding: 0 10px;
-    }
-
-    .circlelight {
-        display: none;
-    }
-
-    /* Page 5 */
-    .page5 {
-        border-radius: 50px 50px 0 0;
-    }
-
-    .png1 {
-        width: 150px;
-        height: 120px;
-    }
-
+    /* Page 5 Mobile */
     .p5toptext h1 {
-        font-size: 24px;
-        padding: 0 15px;
+        font-size: 26px;
     }
 
-    .p5toptext p {
-        font-size: 13px;
-    }
-
-    .p5img,
-    .pe {
-        width: 95%;
-        height: 280px;
-    }
-
-    .p5btdiv {
-        margin-top: 20px;
-    }
-
-    .p5bt {
-        margin-top: 30px;
-    }
-
-    /* Page 6 */
-    .page6 {
-        border-radius: 50px 50px 0 0;
-    }
-
-    .p6rightroundbox {
-        width: 300px;
-        height: 300px;
-        right: -150px;
-        top: -150px;
-    }
-
-    .p6leftbottombox {
-        width: 250px;
-        height: 250px;
-    }
-
+    /* Page 6 Mobile */
     .p6h1 h1 {
-        font-size: 22px;
-        padding: 0 15px;
-    }
-
-    .p6bottomcard {
-        padding: 30px 10px;
-        gap: 60px;
+        font-size: 24px;
     }
 
     .p6cards {
-        width: 90%;
-        height: 400px;
+        width: 95%;
     }
 
-    .cardtopimg {
-        margin-top: -60px;
-    }
-
-    .cardtopimg img {
-        width: 60%;
-    }
-
-    .cardtext h2 {
-        font-size: 18px;
-    }
-
-    .cardtext p {
-        font-size: 14px;
-    }
-
-    .hi button {
-        width: 90px;
-        height: 32px;
-        font-size: 12px;
-    }
-
-    /* Page 7 */
-    .page7 {
-        min-height: 50vh;
-    }
-
-    .p7b11 {
-        height: 80px;
-        padding: 10px;
-    }
-
+    /* Page 7 Mobile */
     .p7b11 h1 {
-        font-size: 24px;
+        font-size: 28px;
     }
 
-    .p7in h2 {
-        font-size: 18px;
-    }
-
-    /* Page 8 */
+    /* Testimonials */
     .title {
-        font-size: 22px;
-        margin-bottom: 60px;
+        font-size: 26px;
     }
 
     .p8cards {
-        height: 260px;
+        width: 95%;
+        padding: 15px;
     }
 
     .uimg1 {
-        width: 90px;
-        height: 90px;
-        border-width: 6px;
+        width: 80px;
+        height: 80px;
         top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        /* Centered image */
     }
 
     .rating {
-        width: 140px;
-        font-size: 18px;
-        padding: 8px;
-        margin-top: -15px;
+        margin-top: 40px;
+        /* Space for centered image */
     }
 
-    .test-title {
-        font-size: 20px;
-        margin-top: 5px;
-    }
-
-    .test-text {
-        font-size: 13px;
-        line-height: 20px;
-    }
-
-    .author {
-        font-size: 13px;
-    }
-
-    .time {
-        font-size: 11px;
-    }
-
-    /* Page 9 */
-    iframe {
-        height: 280px;
-    }
-
-    /* Page 10 */
-    .p10box {
-        padding-top: 40px;
-    }
-
-    .p10b1text {
-        flex-direction: column;
-        align-items: center;
+    /* Testimonial text centering */
+    .ratingtext {
+        text-align: center;
+        width: 100%;
     }
 
     .p10sweet {
@@ -2524,73 +2528,6 @@ iframe {
     }
 
     .p10sweet span {
-        font-size: 35px;
-    }
-
-    .p10leftimg {
-        width: 50px;
-        height: 40px;
-    }
-
-    .p10box1 p {
-        font-size: 15px;
-        line-height: 25px;
-    }
-
-    .p10box2 a {
-        font-size: 16px;
-    }
-
-    .p10box3 h3 {
-        font-size: 18px;
-    }
-
-    .p10box3 p {
-        font-size: 15px;
-    }
-
-    .poi {
-        width: 150px;
-        height: 150px;
-    }
-
-    .p10div2 p {
-        font-size: 12px;
-        padding: 10px;
-    }
-}
-
-/* Extra Small Devices (max-width: 360px) */
-@media only screen and (max-width: 360px) {
-    nav h1 {
-        font-size: 18px;
-    }
-
-    .content h1 {
-        font-size: 22px;
-    }
-
-    .p2text h1 {
-        font-size: 24px;
-    }
-
-    .text h1 {
-        font-size: 20px;
-    }
-
-    .p4tophead h1 {
-        font-size: 20px;
-    }
-
-    .p5toptext h1 {
-        font-size: 20px;
-    }
-
-    .p6h1 h1 {
-        font-size: 18px;
-    }
-
-    .title {
-        font-size: 18px;
+        font-size: 36px;
     }
 }

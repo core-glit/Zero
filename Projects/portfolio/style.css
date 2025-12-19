@@ -323,7 +323,7 @@ body {
 .contact_page {
     animation: fadeIn linear both;
     animation-timeline: view();
-    animation-range: entry 10% cover 40%;
+    animation-range: entry 10% cover 20%;
 }
 
 /* Responsive */
@@ -887,7 +887,7 @@ body {
 
 .projects_grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto auto;
     row-gap: 20px;
     column-gap: 20px;
     max-width: 1300px;
@@ -1081,7 +1081,7 @@ body {
     }
 
     .projects_grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
         /* Stack vertically */
         row-gap: 80px;
         /* Space between cards */
@@ -1491,6 +1491,8 @@ body {
 
     h2 {
         font-size: 24px !important;
+        color: white !important;
+        z-index: 99 !important;
     }
 
     .page_heading {
@@ -1539,7 +1541,7 @@ body {
     }
 
     .side_title_box {
-        display: none;
+        /* display: none; */
     }
 
     .project_info {
