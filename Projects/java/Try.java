@@ -42,7 +42,7 @@ catch(){
 
 //it is used to a method signature to declare with checked exception the method might throw informing the caller to handle  the thing.
 
-//once we use return on try block it will not execute the catch block and 
+//once we use return on try block it will not execute the catch block and finally block
 
 //exception handling
 
@@ -68,6 +68,8 @@ public class Try {
     catch(Exception e){
         e.printStackTrace();
     }
+    finally{
+        System.out.println("finally block");
     }    
 }
 
