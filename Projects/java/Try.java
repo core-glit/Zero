@@ -73,4 +73,4 @@ public class Try {
 }
 }
 
-
+//the exception e is a parent class exception we can use it to catch all the exceptions and while using child exceptions 

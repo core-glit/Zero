@@ -2141,8 +2141,19 @@ iframe {
 
     /* Video Section */
     .videocontainer {
-        min-height: auto;
-        padding-bottom: 50px;
+        position: relative;
+        height: auto;
+        min-height: 80vh;
+        padding-bottom: 0;
+        margin-bottom: 40px;
+    }
+
+    .videocontainer>img {
+        border-radius: 40px 40px 0 0;
+        width: 100%;
+        min-height: 80vh;
+        object-fit: cover;
+        display: block;
     }
 
     video {
@@ -2150,40 +2161,70 @@ iframe {
     }
 
     .text {
-        position: relative;
-        top: auto;
-        left: auto;
-        padding: 20px;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        right: 0;
+        padding: 15px;
         text-align: center;
+        z-index: 10;
     }
 
     .text h1 {
-        font-size: 36px;
+        font-size: 24px;
         padding: 10px 0;
+        line-height: 1.2;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     }
 
     .text p {
-        font-size: 16px;
-        padding: 10px;
+        font-size: 13px;
+        padding: 3px 10px;
+        line-height: 1.4;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
     }
 
     .out {
-        margin-top: 20px;
+        margin-top: 10px;
+        padding: 10px;
     }
 
     .out button {
-        width: 60%;
-        font-size: 16px;
+        width: 40%;
+        font-size: 12px;
+        padding: 8px 15px;
     }
 
     /* Page 4 - Manufacturing */
     .page4 {
         border-radius: 60px 60px 0 0;
+        margin-top: 0;
+        height: auto;
+        min-height: auto;
     }
 
     .p4tophead h1 {
         font-size: 32px;
         padding-top: 20px;
+    }
+
+    .backgroundcolordiv {
+        position: relative;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .p4box2 {
+        position: relative;
+        margin-top: 0;
+    }
+
+    .lineborder {
+        display: none;
+    }
+
+    .p4halfcircle {
+        display: none;
     }
 
     .p4botbox1 {
@@ -2529,5 +2570,92 @@ iframe {
 
     .p10sweet span {
         font-size: 36px;
+    }
+}
+
+/* ============================================= */
+/* Pure CSS Reveal Animations (No JavaScript)   */
+/* ============================================= */
+
+/* Base styles for reveal elements */
+.reveal,
+.reveal-left,
+.reveal-right {
+    opacity: 0;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+/* Fade in from bottom */
+.reveal {
+    animation-name: fadeInUp;
+}
+
+/* Slide in from left */
+.reveal-left {
+    animation-name: slideInLeft;
+}
+
+/* Slide in from right */
+.reveal-right {
+    animation-name: slideInRight;
+}
+
+/* Delay classes */
+.delay-100 {
+    animation-delay: 0.1s;
+}
+
+.delay-200 {
+    animation-delay: 0.2s;
+}
+
+.delay-300 {
+    animation-delay: 0.3s;
+}
+
+.delay-400 {
+    animation-delay: 0.4s;
+}
+
+.delay-500 {
+    animation-delay: 0.5s;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }

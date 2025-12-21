@@ -1,0 +1,24 @@
+FORGERY DETECTION - ONLINE IMAGE FRAUD DETECTION (PASSPORT CHANGES)
+
+ai based ah irrukanum 
+work flow
+backend process (deep explaination)
+INBUILD API METHOD CALLING 
+
+
+return condition1 ? value1 : condition2 ? value2 : condition3 ? value3 : value4;
+
+//ES6 is the latest version of javascript 
+
+let,const, template literals 
+
+string templates,
+templates String,
+Template Literals.
+
+string la variable use pannanum na :
+backtip(``) ulla variable name use pannanu na ${} use pannanum
+PLEASE PROVIDE THE FEES LIST OF CLASS ALONG WITH AMOUNT
+subject group
+
+SUBJECT --> topic -- > sub topic ---> lesson
